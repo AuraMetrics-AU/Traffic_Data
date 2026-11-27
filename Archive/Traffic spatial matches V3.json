@@ -1,0 +1,4719 @@
+{
+  "retrieved": "2026-11-19",
+  "raw_sha256": "16b9bdcee023615a631e0532b9d3df615763fff959084834dc95882d07a831de",
+  "sources": {
+    "roads": "https://queensland.opendatasoft.com/explore/assets/roads-and-tracks/",
+    "localities": "https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Basemaps/FoundationData/MapServer/6",
+    "postal_areas_2021": "https://geo.abs.gov.au/arcgis/rest/services/ASGS2021/POA/MapServer/0",
+    "police_regions": "https://open-crime-data.s3-ap-southeast-2.amazonaws.com/document/QPS_REGIONS.zip",
+    "gnaf_august_2026": "https://github.com/minus34/gnaf-loader#option-4---geoparquet-files-in-s3"
+  },
+  "police_archive_last_modified": "2026-10-26",
+  "public_road_feature_count": 564950,
+  "second_pass_validation": {
+    "sample_rows": 5441,
+    "first_pass_unresolved": 4455,
+    "methods": {
+      "mapped four-arm cross intersection": {
+        "estimates": 7,
+        "median_error_m": 9.3,
+        "p90_error_m": 25.3
+      },
+      "G-NAF corroborated road corridor": {
+        "estimates": 2,
+        "median_error_m": 41.7,
+        "p90_error_m": 45.2
+      }
+    }
+  },
+  "records": {
+    "4147": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "5854": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "8436": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "8465": {
+      "Forward_status": "estimated",
+      "Public_longitude": 146.39129527261431,
+      "Public_latitude": -19.044646318091676,
+      "Public_coordinate_basis": "QLD road network short-street midpoint",
+      "Public_road_segments": [
+        "16015103990000319717",
+        "16015103990000319718",
+        "16015103990000319719",
+        "16015103990000319720"
+      ],
+      "Public_suburb": "Rollingstone",
+      "Public_lga": "Townsville City",
+      "Public_postal_area_2021": "4816",
+      "Public_police_region": "Northern"
+    },
+    "8737": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "8863": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "8869": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "9094": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "9169": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "9364": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "insufficient or conflicting G-NAF support for one corridor"
+    },
+    "9414": {
+      "Forward_status": "estimated",
+      "Public_longitude": 153.09799301551175,
+      "Public_latitude": -27.239185489693657,
+      "Public_coordinate_basis": "QLD road network shared junction",
+      "Public_road_segments": [
+        "16015103990000167474",
+        "16015103990000167475",
+        "16015103990000343827"
+      ],
+      "Public_suburb": "Margate",
+      "Public_lga": "Moreton Bay City",
+      "Public_postal_area_2021": "4019",
+      "Public_police_region": "North Coast"
+    },
+    "9499": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "9577": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "9801": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "9820": {
+      "Forward_status": "estimated",
+      "Public_longitude": 150.53110839023094,
+      "Public_latitude": -23.32316794884525,
+      "Public_coordinate_basis": "QLD road network short-street midpoint",
+      "Public_road_segments": [
+        "16015103990000007283"
+      ],
+      "Public_suburb": "Norman Gardens",
+      "Public_lga": "Rockhampton Regional",
+      "Public_postal_area_2021": "4701",
+      "Public_police_region": "Central"
+    },
+    "9905": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "9932": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "9968": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "insufficient or conflicting G-NAF support for one corridor"
+    },
+    "12367": {
+      "Forward_status": "multiple possible road junctions",
+      "Second_pass_status": "recorded junction type does not establish a cross intersection"
+    },
+    "13087": {
+      "Forward_status": "estimated",
+      "Public_longitude": 152.34875518631299,
+      "Public_latitude": -24.90340327909364,
+      "Public_coordinate_basis": "QLD road network short-street midpoint",
+      "Public_road_segments": [
+        "16015103990000070851"
+      ],
+      "Public_suburb": "Thabeban",
+      "Public_lga": "Bundaberg Regional",
+      "Public_postal_area_2021": "4670",
+      "Public_police_region": "North Coast"
+    },
+    "13339": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "13669": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "13699": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "13887": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "15014": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "15245": {
+      "Forward_status": "estimated",
+      "Public_longitude": 153.29706787561005,
+      "Public_latitude": -27.856250444675617,
+      "Public_coordinate_basis": "QLD road network shared junction",
+      "Public_road_segments": [
+        "16015103990000066961",
+        "16015103990000275331",
+        "16015103990000275332"
+      ],
+      "Public_suburb": "Upper Coomera",
+      "Public_lga": "Gold Coast City",
+      "Public_postal_area_2021": "4209",
+      "Public_police_region": "South Eastern"
+    },
+    "15449": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "15593": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "15623": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "insufficient or conflicting G-NAF support for one corridor"
+    },
+    "15821": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "15961": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "16014": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "16142": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "16309": {
+      "Forward_status": "estimated",
+      "Public_longitude": 149.45358236671163,
+      "Public_latitude": -24.12913979810353,
+      "Public_coordinate_basis": "QLD road network short-street midpoint",
+      "Public_road_segments": [
+        "16015103990000034263"
+      ],
+      "Public_suburb": "Woorabinda",
+      "Public_lga": "Woorabinda Aboriginal Shire",
+      "Public_postal_area_2021": "4713",
+      "Public_police_region": "Central"
+    },
+    "16383": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "16399": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "16458": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "16540": {
+      "Forward_status": "estimated",
+      "Public_longitude": 146.7326093961755,
+      "Public_latitude": -19.288219936983783,
+      "Public_coordinate_basis": "QLD road network short-street midpoint",
+      "Public_road_segments": [
+        "16015103990000101451",
+        "16015103990000101452",
+        "16015103990000101453"
+      ],
+      "Public_suburb": "Kirwan",
+      "Public_lga": "Townsville City",
+      "Public_postal_area_2021": "4817",
+      "Public_police_region": "Northern"
+    },
+    "16548": {
+      "Forward_status": "estimated",
+      "Public_longitude": 153.281870272932,
+      "Public_latitude": -27.518159322158084,
+      "Public_coordinate_basis": "QLD road network short-street midpoint",
+      "Public_road_segments": [
+        "16015103990000279536",
+        "16015103990000279537"
+      ],
+      "Public_suburb": "Cleveland",
+      "Public_lga": "Redland City",
+      "Public_postal_area_2021": "4163",
+      "Public_police_region": "Brisbane"
+    },
+    "16582": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "16596": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "16832": {
+      "Forward_status": "estimated",
+      "Public_longitude": 141.72808503727543,
+      "Public_latitude": -13.355005979198964,
+      "Public_coordinate_basis": "QLD road network short-street midpoint",
+      "Public_road_segments": [
+        "16015103990000183982",
+        "16015103990000183983",
+        "16015103990000183984",
+        "16015103990000183985",
+        "16015103990000183986",
+        "16015103990000183987",
+        "16015103990000183988",
+        "16015103990000183989",
+        "16015103990000183990",
+        "16015103990000183991",
+        "16298150590000000209"
+      ],
+      "Public_suburb": "Aurukun",
+      "Public_lga": "Aurukun Shire",
+      "Public_postal_area_2021": "4892",
+      "Public_police_region": "Far Northern"
+    },
+    "17576": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "17694": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "17811": {
+      "Forward_status": "estimated",
+      "Public_longitude": 153.24955993633225,
+      "Public_latitude": -27.760063786924984,
+      "Public_coordinate_basis": "QLD road network short-street midpoint",
+      "Public_road_segments": [
+        "16015103990000257491",
+        "17250344130000000074"
+      ],
+      "Public_suburb": "Ormeau",
+      "Public_lga": "Gold Coast City",
+      "Public_postal_area_2021": "4208",
+      "Public_police_region": "South Eastern"
+    },
+    "18036": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "18318": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "18341": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "18596": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "18744": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "insufficient or conflicting G-NAF support for one corridor"
+    },
+    "18831": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "18865": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "18941": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "19079": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "19080": {
+      "Forward_status": "estimated",
+      "Public_longitude": 146.5814245845533,
+      "Public_latitude": -18.736378779494228,
+      "Public_coordinate_basis": "QLD road network shared junction",
+      "Public_road_segments": [
+        "16015103990000175918",
+        "16015103990000211487",
+        "16015103990000211488"
+      ],
+      "Public_suburb": "Palm Island",
+      "Public_lga": "Palm Island Aboriginal Shire",
+      "Public_postal_area_2021": "4816",
+      "Public_police_region": "Northern"
+    },
+    "19159": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "19405": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "19497": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "20047": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "insufficient or conflicting G-NAF support for one corridor"
+    },
+    "20285": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "20386": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "21144": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "21165": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "21575": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "21762": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "21961": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "22616": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "23109": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "24460": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "24594": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "25293": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "25444": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "26011": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "26334": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "29360": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "31330": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "32442": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "32765": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "32805": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "32847": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "32858": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "32918": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "32968": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "33066": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "33103": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "33186": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "33224": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "33431": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "33445": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "insufficient or conflicting G-NAF support for one corridor"
+    },
+    "33755": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "34421": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "34564": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "34646": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "34647": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "34648": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "34881": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "34919": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "35047": {
+      "Forward_status": "estimated",
+      "Public_longitude": 149.22107638492184,
+      "Public_latitude": -21.118155972347978,
+      "Public_coordinate_basis": "QLD road network short-street midpoint",
+      "Public_road_segments": [
+        "16015103990000109060",
+        "16015103990000109061",
+        "16209983630000000175"
+      ],
+      "Public_suburb": "Mackay Harbour",
+      "Public_lga": "Mackay Regional",
+      "Public_postal_area_2021": "4740",
+      "Public_police_region": "Central"
+    },
+    "35098": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "35157": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "36828": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "37016": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "38153": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "38249": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "40819": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "45187": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "47039": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "47455": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "50793": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "51244": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "51800": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "51929": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "53033": {
+      "Forward_status": "no shared road junction for the recorded street pair",
+      "Second_pass_status": "no shared ground-level node for the recorded junction"
+    },
+    "53559": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "53998": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "54127": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "54168": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "54295": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "54329": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "54412": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "54442": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "54688": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "54851": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "55666": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "57813": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "57905": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "63394": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "64517": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "64967": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "64968": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "65058": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "65090": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "65125": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "65142": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "65400": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "65414": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "65492": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "65658": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "65711": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "65794": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "66329": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "66337": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "66423": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "66483": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "66583": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "66698": {
+      "Forward_status": "estimated",
+      "Public_longitude": 149.45358236671163,
+      "Public_latitude": -24.12913979810353,
+      "Public_coordinate_basis": "QLD road network short-street midpoint",
+      "Public_road_segments": [
+        "16015103990000034263"
+      ],
+      "Public_suburb": "Woorabinda",
+      "Public_lga": "Woorabinda Aboriginal Shire",
+      "Public_postal_area_2021": "4713",
+      "Public_police_region": "Central"
+    },
+    "66825": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "67600": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "67608": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "insufficient or conflicting G-NAF support for one corridor"
+    },
+    "67835": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "68339": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "75219": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "76417": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "76545": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "76800": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "76946": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "77145": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "77269": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "77292": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "insufficient or conflicting G-NAF support for one corridor"
+    },
+    "77583": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "77717": {
+      "Forward_status": "estimated",
+      "Public_longitude": 153.02246966075242,
+      "Public_latitude": -27.378064505064046,
+      "Public_coordinate_basis": "QLD road network short-street midpoint",
+      "Public_road_segments": [
+        "16015103990000196269",
+        "16015103990000196270",
+        "16015103990000196271"
+      ],
+      "Public_suburb": "Chermside West",
+      "Public_lga": "Brisbane City",
+      "Public_postal_area_2021": "4032",
+      "Public_police_region": "Brisbane"
+    },
+    "77726": {
+      "Forward_status": "estimated",
+      "Public_longitude": 153.01876449986872,
+      "Public_latitude": -27.489699818352207,
+      "Public_coordinate_basis": "QLD road network short-street midpoint",
+      "Public_road_segments": [
+        "16015103990000210886"
+      ],
+      "Public_suburb": "Highgate Hill",
+      "Public_lga": "Brisbane City",
+      "Public_postal_area_2021": "4101",
+      "Public_police_region": "Brisbane"
+    },
+    "77769": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "78174": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "78300": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "79199": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "79238": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "79464": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "79470": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "81603": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "81719": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "81787": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "81859": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "82004": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "82055": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "82101": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "82189": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "82324": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "82737": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "82991": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "83043": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "83153": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "83300": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "83689": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "83754": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "84318": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "85008": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "87097": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "87794": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "88108": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "103135": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "103136": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "103137": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "104395": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "104531": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "104628": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "104902": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "104992": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "106991": {
+      "Forward_status": "estimated",
+      "Public_longitude": 153.32117035286393,
+      "Public_latitude": -28.00947820654554,
+      "Public_coordinate_basis": "QLD road network short-street midpoint",
+      "Public_road_segments": [
+        "16015103990000394929",
+        "16015103990000394930",
+        "16015103990000394931",
+        "16015103990000394932",
+        "16015103990000394933"
+      ],
+      "Public_suburb": "Highland Park",
+      "Public_lga": "Gold Coast City",
+      "Public_postal_area_2021": "4211",
+      "Public_police_region": "South Eastern"
+    },
+    "107293": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "107579": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "107782": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "109459": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "111366": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "111777": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "111954": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "111955": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "113806": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "115511": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "117800": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "117823": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "117824": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "118077": {
+      "Forward_status": "estimated",
+      "Public_longitude": 150.5319872112892,
+      "Public_latitude": -23.34131285100265,
+      "Public_coordinate_basis": "QLD road network short-street midpoint",
+      "Public_road_segments": [
+        "16015103990000151814",
+        "16015103990000151815"
+      ],
+      "Public_suburb": "Frenchville",
+      "Public_lga": "Rockhampton Regional",
+      "Public_postal_area_2021": "4701",
+      "Public_police_region": "Central"
+    },
+    "118131": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "118217": {
+      "Forward_status": "estimated",
+      "Public_longitude": 143.34161476678804,
+      "Public_latitude": -12.785085849809782,
+      "Public_coordinate_basis": "QLD road network short-street midpoint",
+      "Public_road_segments": [
+        "16015103990000287402"
+      ],
+      "Public_suburb": "Lockhart River",
+      "Public_lga": "Lockhart River Aboriginal Shire",
+      "Public_postal_area_2021": "4892",
+      "Public_police_region": "Far Northern"
+    },
+    "118431": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "118682": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "118863": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "119223": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "119379": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "119613": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "119742": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "119766": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "120007": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "120222": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "120684": {
+      "Forward_status": "estimated",
+      "Public_longitude": 144.80862404144906,
+      "Public_latitude": -28.67999774897483,
+      "Public_coordinate_basis": "QLD road network short-street midpoint",
+      "Public_road_segments": [
+        "16015103990000459397",
+        "16015103990000459398",
+        "16015103990000459399"
+      ],
+      "Public_suburb": "Hungerford",
+      "Public_lga": "Paroo Shire",
+      "Public_postal_area_2021": "4493",
+      "Public_police_region": "Southern"
+    },
+    "120693": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "120846": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "122429": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "122430": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "122872": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "128099": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "128100": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "128101": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "128102": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "128104": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "128105": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "128106": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "128107": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "128108": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "131125": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "137314": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "137378": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "137422": {
+      "Forward_status": "estimated",
+      "Public_longitude": 148.11497112378368,
+      "Public_latitude": -23.469846947424593,
+      "Public_coordinate_basis": "QLD road network shared junction",
+      "Public_road_segments": [
+        "16015103990000042328",
+        "16015103990000391734",
+        "16015103990000391737"
+      ],
+      "Public_suburb": "Emerald",
+      "Public_lga": "Central Highlands Regional",
+      "Public_postal_area_2021": "4720",
+      "Public_police_region": "Central"
+    },
+    "137469": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "137513": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "137620": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "137682": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "137785": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "138104": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "138402": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "138410": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "138639": {
+      "Forward_status": "no shared road junction for the recorded street pair",
+      "Second_pass_status": "recorded junction type does not establish a cross intersection"
+    },
+    "138850": {
+      "Forward_status": "estimated",
+      "Public_longitude": 152.9325725929568,
+      "Public_latitude": -26.453158193552703,
+      "Public_coordinate_basis": "QLD road network short-street midpoint",
+      "Public_road_segments": [
+        "16015103990000216036",
+        "16015103990000216037"
+      ],
+      "Public_suburb": "Eerwah Vale",
+      "Public_lga": "Sunshine Coast Regional",
+      "Public_postal_area_2021": "4562",
+      "Public_police_region": "North Coast"
+    },
+    "138982": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "139202": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "139456": {
+      "Forward_status": "no shared road junction for the recorded street pair",
+      "Second_pass_status": "recorded junction type does not establish a cross intersection"
+    },
+    "139574": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "139863": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "139903": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "140055": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "140172": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "140315": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "140430": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "142733": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "142939": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "143002": {
+      "Forward_status": "estimated",
+      "Public_longitude": 149.22831361326897,
+      "Public_latitude": -21.412454816272618,
+      "Public_coordinate_basis": "QLD road network short-street midpoint",
+      "Public_road_segments": [
+        "16015103990000155752",
+        "16015103990000155753",
+        "16015103990000155754"
+      ],
+      "Public_suburb": "Sarina",
+      "Public_lga": "Mackay Regional",
+      "Public_postal_area_2021": "4737",
+      "Public_police_region": "Central"
+    },
+    "143438": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "144003": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "144160": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "144674": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "144684": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "144807": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "146331": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "149770": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "151566": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "152222": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "152685": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "insufficient or conflicting G-NAF support for one corridor"
+    },
+    "153341": {
+      "Forward_status": "estimated",
+      "Public_longitude": 146.75362993051002,
+      "Public_latitude": -19.32612036556279,
+      "Public_coordinate_basis": "QLD road network short-street midpoint",
+      "Public_road_segments": [
+        "16015103990000052457",
+        "16015103990000052458"
+      ],
+      "Public_suburb": "Douglas",
+      "Public_lga": "Townsville City",
+      "Public_postal_area_2021": "4814",
+      "Public_police_region": "Northern"
+    },
+    "153482": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "153537": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "154475": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "154515": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "154914": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "162544": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "171975": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "172019": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "172305": {
+      "Forward_status": "estimated",
+      "Public_longitude": 151.9572511993502,
+      "Public_latitude": -26.669625431914685,
+      "Public_coordinate_basis": "QLD road network shared junction",
+      "Public_road_segments": [
+        "16015103990000060560",
+        "16015103990000271616",
+        "16657598460000000023"
+      ],
+      "Public_suburb": "Nanango",
+      "Public_lga": "South Burnett Regional",
+      "Public_postal_area_2021": "4615",
+      "Public_police_region": "Southern"
+    },
+    "172665": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "172698": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "172743": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "172843": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "173189": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "173198": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "173296": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "173387": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "173454": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "173499": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "173596": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "173643": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "173697": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "173742": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "173744": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "173795": {
+      "Forward_status": "estimated",
+      "Public_longitude": 150.619852847419,
+      "Public_latitude": -24.36282587323005,
+      "Public_coordinate_basis": "QLD road network short-street midpoint",
+      "Public_road_segments": [
+        "16015103990000078167"
+      ],
+      "Public_suburb": "Mount Murchison",
+      "Public_lga": "Banana Shire",
+      "Public_postal_area_2021": "4715",
+      "Public_police_region": "Central"
+    },
+    "173814": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "173876": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "174017": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "174161": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "174239": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "174356": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "174489": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "174496": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "174534": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "174902": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "174980": {
+      "Forward_status": "estimated",
+      "Public_longitude": 152.65163989268885,
+      "Public_latitude": -26.199877078201624,
+      "Public_coordinate_basis": "QLD road network short-street midpoint",
+      "Public_road_segments": [
+        "16015103990000397384",
+        "16015103990000397385",
+        "16015103990000397386",
+        "16015103990000397387"
+      ],
+      "Public_suburb": "Southside",
+      "Public_lga": "Gympie Regional",
+      "Public_postal_area_2021": "4570",
+      "Public_police_region": "North Coast"
+    },
+    "175030": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "175164": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "175248": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "175256": {
+      "Forward_status": "estimated",
+      "Public_longitude": 153.05602314762302,
+      "Public_latitude": -27.552452098295856,
+      "Public_coordinate_basis": "QLD road network short-street midpoint",
+      "Public_road_segments": [
+        "16015103990000109787",
+        "16015103990000109788",
+        "16015103990000109789"
+      ],
+      "Public_suburb": "Nathan",
+      "Public_lga": "Brisbane City",
+      "Public_postal_area_2021": "4111",
+      "Public_police_region": "Brisbane"
+    },
+    "175298": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "175301": {
+      "Forward_status": "estimated",
+      "Public_longitude": 145.4278227936689,
+      "Public_latitude": -17.051855702557027,
+      "Public_coordinate_basis": "QLD road network shared junction",
+      "Public_road_segments": [
+        "16015103990000133843",
+        "16015103990000133845",
+        "16015103990000399175"
+      ],
+      "Public_suburb": "Mareeba",
+      "Public_lga": "Mareeba Shire",
+      "Public_postal_area_2021": "4880",
+      "Public_police_region": "Far Northern"
+    },
+    "175304": {
+      "Forward_status": "no shared road junction for the recorded street pair",
+      "Second_pass_status": "recorded junction type does not establish a cross intersection"
+    },
+    "175306": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "insufficient or conflicting G-NAF support for one corridor"
+    },
+    "175447": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "178760": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "recorded junction type does not establish a cross intersection"
+    },
+    "179355": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "181388": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "185302": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "186512": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "210420": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "215330": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "220568": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "222565": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "223395": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "insufficient observed crashes on the candidate road or junction",
+      "Second_pass_review_latitude": -27.660756543761913,
+      "Second_pass_review_longitude": 152.92281918975272,
+      "Second_pass_review_basis": "G-NAF corroborated road corridor"
+    },
+    "223827": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "224213": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "estimated",
+      "Public_latitude": -27.63699089602359,
+      "Public_longitude": 153.02822244891348,
+      "Public_coordinate_basis": "G-NAF corroborated road corridor",
+      "Public_road_segments": [
+        "16015103990000321644",
+        "16015103990000321645",
+        "16015103990000321646",
+        "16015103990000321647",
+        "16015103990000321648"
+      ],
+      "Second_pass_road_extent_m": 195.3,
+      "Second_pass_address_sites": 5,
+      "Second_pass_crash_donors": 7,
+      "Public_suburb": "Parkinson",
+      "Public_lga": "Brisbane City",
+      "Public_postal_area_2021": "4115",
+      "Public_police_region": "Brisbane"
+    },
+    "224222": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "224270": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "224739": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "224921": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "225235": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "225499": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "225972": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "226032": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "226033": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "226247": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "226529": {
+      "Forward_status": "estimated",
+      "Public_longitude": 152.30421407808518,
+      "Public_latitude": -24.848240682022496,
+      "Public_coordinate_basis": "QLD road network short-street midpoint",
+      "Public_road_segments": [
+        "16015103990000275553",
+        "16015103990000275554"
+      ],
+      "Public_suburb": "Oakwood",
+      "Public_lga": "Bundaberg Regional",
+      "Public_postal_area_2021": "4670",
+      "Public_police_region": "North Coast"
+    },
+    "228074": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "233570": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "233839": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "238322": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "238343": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "238547": {
+      "Forward_status": "estimated",
+      "Public_longitude": 141.72655268467562,
+      "Public_latitude": -13.356595704794728,
+      "Public_coordinate_basis": "QLD road network short-street midpoint",
+      "Public_road_segments": [
+        "16015103990000279598",
+        "16015103990000279599",
+        "16015103990000279600",
+        "16015103990000279601",
+        "16015103990000279602",
+        "16015103990000279603",
+        "16015103990000279604"
+      ],
+      "Public_suburb": "Aurukun",
+      "Public_lga": "Aurukun Shire",
+      "Public_postal_area_2021": "4892",
+      "Public_police_region": "Far Northern"
+    },
+    "238626": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "insufficient observed crashes on the candidate road or junction",
+      "Second_pass_review_latitude": -27.88017751079109,
+      "Second_pass_review_longitude": 153.2984936021866,
+      "Second_pass_review_basis": "G-NAF corroborated road corridor"
+    },
+    "238847": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "238916": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "246225": {
+      "Forward_status": "estimated",
+      "Public_longitude": 148.26654104690527,
+      "Public_latitude": -20.01233176822613,
+      "Public_coordinate_basis": "QLD road network short-street midpoint",
+      "Public_road_segments": [
+        "16015103990000220015"
+      ],
+      "Public_suburb": "Bowen",
+      "Public_lga": "Whitsunday Regional",
+      "Public_postal_area_2021": "4805",
+      "Public_police_region": "Central"
+    },
+    "246362": {
+      "Forward_status": "estimated",
+      "Public_longitude": 153.1693296305957,
+      "Public_latitude": -27.097079612434648,
+      "Public_coordinate_basis": "QLD road network short-street midpoint",
+      "Public_road_segments": [
+        "16015103990000311441",
+        "16015103990000311442",
+        "16015103990000311443",
+        "16015103990000311444"
+      ],
+      "Public_suburb": "Bongaree",
+      "Public_lga": "Moreton Bay City",
+      "Public_postal_area_2021": "4507",
+      "Public_police_region": "North Coast"
+    },
+    "246420": {
+      "Forward_status": "multiple possible road junctions",
+      "Second_pass_status": "recorded junction type does not establish a cross intersection"
+    },
+    "246564": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "246567": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "246685": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "246734": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "246796": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "insufficient observed crashes on the candidate road or junction",
+      "Second_pass_review_latitude": -13.355580464022673,
+      "Second_pass_review_longitude": 141.7251170419619,
+      "Second_pass_review_basis": "mapped four-arm cross intersection"
+    },
+    "246920": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "247189": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "247243": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "247371": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "247414": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "247422": {
+      "Forward_status": "estimated",
+      "Public_longitude": 153.09485485956023,
+      "Public_latitude": -27.526447491646792,
+      "Public_coordinate_basis": "QLD road network shared junction",
+      "Public_road_segments": [
+        "16015103990000183158",
+        "16015103990000364467",
+        "16015103990000364468"
+      ],
+      "Public_suburb": "Mount Gravatt East",
+      "Public_lga": "Brisbane City",
+      "Public_postal_area_2021": "4122",
+      "Public_police_region": "Brisbane"
+    },
+    "247555": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "247672": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "247953": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "247972": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "248000": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "248121": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "insufficient or conflicting G-NAF support for one corridor"
+    },
+    "248129": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "248236": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "248364": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "248404": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "248510": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "248577": {
+      "Forward_status": "estimated",
+      "Public_longitude": 151.95198320855803,
+      "Public_latitude": -28.577956817367962,
+      "Public_coordinate_basis": "QLD road network shared junction",
+      "Public_road_segments": [
+        "16015103990000147325",
+        "16015103990000147330",
+        "16015103990000355657"
+      ],
+      "Public_suburb": "The Summit",
+      "Public_lga": "Southern Downs Regional",
+      "Public_postal_area_2021": "4377",
+      "Public_police_region": "Southern"
+    },
+    "248640": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "248793": {
+      "Forward_status": "estimated",
+      "Public_longitude": 141.7266886655044,
+      "Public_latitude": -13.35747347671446,
+      "Public_coordinate_basis": "QLD road network short-street midpoint",
+      "Public_road_segments": [
+        "16015103990000247597",
+        "16015103990000247598",
+        "16015103990000247599",
+        "16015103990000247600",
+        "16015103990000247601",
+        "16015103990000247602"
+      ],
+      "Public_suburb": "Aurukun",
+      "Public_lga": "Aurukun Shire",
+      "Public_postal_area_2021": "4892",
+      "Public_police_region": "Far Northern"
+    },
+    "248854": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "248879": {
+      "Forward_status": "no shared road junction for the recorded street pair",
+      "Second_pass_status": "recorded junction type does not establish a cross intersection"
+    },
+    "248923": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "248986": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "249093": {
+      "Forward_status": "estimated",
+      "Public_longitude": 149.16157649274953,
+      "Public_latitude": -21.156779516221278,
+      "Public_coordinate_basis": "QLD road network short-street midpoint",
+      "Public_road_segments": [
+        "16015103990000133920",
+        "16015103990000133921",
+        "16015103990000133922"
+      ],
+      "Public_suburb": "West Mackay",
+      "Public_lga": "Mackay Regional",
+      "Public_postal_area_2021": "4740",
+      "Public_police_region": "Central"
+    },
+    "249345": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "249400": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "253380": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "255397": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "255721": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "255771": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "candidate corridor is too long for automatic estimation",
+      "Second_pass_review_latitude": -18.749522881450243,
+      "Second_pass_review_longitude": 146.5793311766284,
+      "Second_pass_review_basis": "G-NAF corroborated road corridor"
+    },
+    "255775": {
+      "Forward_status": "no shared road junction for the recorded street pair",
+      "Second_pass_status": "recorded junction type does not establish a cross intersection"
+    },
+    "255881": {
+      "Forward_status": "estimated",
+      "Public_longitude": 153.1693296305957,
+      "Public_latitude": -27.097079612434648,
+      "Public_coordinate_basis": "QLD road network short-street midpoint",
+      "Public_road_segments": [
+        "16015103990000311441",
+        "16015103990000311442",
+        "16015103990000311443",
+        "16015103990000311444"
+      ],
+      "Public_suburb": "Bongaree",
+      "Public_lga": "Moreton Bay City",
+      "Public_postal_area_2021": "4507",
+      "Public_police_region": "North Coast"
+    },
+    "256846": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "256913": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "257015": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "257485": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "259647": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "262298": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "262477": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "262478": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "263066": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "273286": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "candidate corridor is too long for automatic estimation",
+      "Second_pass_review_latitude": -18.14258261087345,
+      "Second_pass_review_longitude": 144.31261187823569,
+      "Second_pass_review_basis": "G-NAF corroborated road corridor"
+    },
+    "274533": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "280361": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "280588": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "280638": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "280832": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "280996": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "281227": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "281293": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "281331": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "281623": {
+      "Forward_status": "estimated",
+      "Public_longitude": 142.16381248227964,
+      "Public_latitude": -10.161667480564848,
+      "Public_coordinate_basis": "QLD road network shared junction",
+      "Public_road_segments": [
+        "16015103990000069995",
+        "16015103990000278520"
+      ],
+      "Public_suburb": "Badu Island",
+      "Public_lga": "Torres Strait Island Regional",
+      "Public_postal_area_2021": "4875",
+      "Public_police_region": "Far Northern"
+    },
+    "281634": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "insufficient or conflicting G-NAF support for one corridor"
+    },
+    "281783": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "281880": {
+      "Forward_status": "multiple possible road junctions",
+      "Second_pass_status": "recorded street pair repeats the same name"
+    },
+    "282001": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "282528": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "282584": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "282751": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "283105": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "300222": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "300310": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "304558": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "304879": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "307941": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "307942": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "307943": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "308703": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "309587": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "309779": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "310261": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "310319": {
+      "Forward_status": "estimated",
+      "Public_longitude": 152.99175758589408,
+      "Public_latitude": -27.737279519923863,
+      "Public_coordinate_basis": "QLD road network short-street midpoint",
+      "Public_road_segments": [
+        "16798992940000000023",
+        "16798992940000000026"
+      ],
+      "Public_suburb": "Greenbank",
+      "Public_lga": "Logan City",
+      "Public_postal_area_2021": "4124",
+      "Public_police_region": "South Eastern"
+    },
+    "310631": {
+      "Forward_status": "estimated",
+      "Public_longitude": 141.7266886655044,
+      "Public_latitude": -13.35747347671446,
+      "Public_coordinate_basis": "QLD road network short-street midpoint",
+      "Public_road_segments": [
+        "16015103990000247597",
+        "16015103990000247598",
+        "16015103990000247599",
+        "16015103990000247600",
+        "16015103990000247601",
+        "16015103990000247602"
+      ],
+      "Public_suburb": "Aurukun",
+      "Public_lga": "Aurukun Shire",
+      "Public_postal_area_2021": "4892",
+      "Public_police_region": "Far Northern"
+    },
+    "310892": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "311021": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "311540": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "311572": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "312515": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "319168": {
+      "Forward_status": "estimated",
+      "Public_longitude": 153.1693296305957,
+      "Public_latitude": -27.097079612434648,
+      "Public_coordinate_basis": "QLD road network short-street midpoint",
+      "Public_road_segments": [
+        "16015103990000311441",
+        "16015103990000311442",
+        "16015103990000311443",
+        "16015103990000311444"
+      ],
+      "Public_suburb": "Bongaree",
+      "Public_lga": "Moreton Bay City",
+      "Public_postal_area_2021": "4507",
+      "Public_police_region": "North Coast"
+    },
+    "319503": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "319648": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "320116": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "320314": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "321382": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "321760": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "331274": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "332265": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "340583": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "346273": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "346606": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "349612": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "351259": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "353090": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "353991": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "354066": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "355484": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "355812": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "356042": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "356093": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "356105": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "356156": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "356276": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "356567": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "357295": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "357296": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "357373": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "357374": {
+      "Forward_status": "estimated",
+      "Public_longitude": 149.17027590809045,
+      "Public_latitude": -21.111888644180567,
+      "Public_coordinate_basis": "QLD road network short-street midpoint",
+      "Public_road_segments": [
+        "16015103990000331236",
+        "16015103990000331237",
+        "16015103990000331238",
+        "16015103990000331239",
+        "16015103990000331240"
+      ],
+      "Public_suburb": "North Mackay",
+      "Public_lga": "Mackay Regional",
+      "Public_postal_area_2021": "4740",
+      "Public_police_region": "Central"
+    },
+    "357878": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "357908": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "359387": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "360268": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "362484": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "364999": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "366615": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "370062": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "378398": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "380596": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "381202": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "381306": {
+      "Forward_status": "estimated",
+      "Public_longitude": 148.82454766529168,
+      "Public_latitude": -26.58367801059057,
+      "Public_coordinate_basis": "QLD road network shared junction",
+      "Public_road_segments": [
+        "16015103990000126776",
+        "16015103990000319902",
+        "16015103990000319904"
+      ],
+      "Public_suburb": "Roma",
+      "Public_lga": "Maranoa Regional",
+      "Public_postal_area_2021": "4455",
+      "Public_police_region": "Southern"
+    },
+    "381540": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "381563": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "381717": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "381723": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "381961": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "382682": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "382938": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "insufficient or conflicting G-NAF support for one corridor"
+    },
+    "383164": {
+      "Forward_status": "recorded street name absent from road catalogue",
+      "Second_pass_status": "normalized street absent from road network"
+    },
+    "383308": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "383413": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "383608": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "383631": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "391893": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "391894": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "393191": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "402103": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "403295": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "403296": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "403851": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "404428": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "405130": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "407091": {
+      "Forward_status": "street name has multiple components or spans over 1.5 km",
+      "Second_pass_status": "street spans over 3 km or has disconnected corridors"
+    },
+    "407460": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "407482": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "407652": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "408340": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "408341": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "408731": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "413284": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "413285": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "414205": {
+      "Forward_status": "no usable recorded street name",
+      "Second_pass_status": "no usable primary street name"
+    },
+    "1531": {
+      "Public_suburb": "Brisbane Airport",
+      "Public_lga": "Brisbane City",
+      "Public_postal_area_2021": "4008",
+      "Public_police_region": "Brisbane"
+    },
+    "2334": {
+      "Public_street": "Road",
+      "Public_street_distance_m": 3.3,
+      "Public_street_segment": "16015103990000438879",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "3441": {
+      "Public_suburb": "Douglas",
+      "Public_lga": "Townsville City",
+      "Public_postal_area_2021": "4814",
+      "Public_police_region": "Northern"
+    },
+    "5478": {
+      "Public_street": "Mount Lindesay Highway",
+      "Public_street_distance_m": 10.8,
+      "Public_street_segment": "16015103990000243162",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "5652": {
+      "Public_suburb": "Diamond Valley",
+      "Public_lga": "Sunshine Coast Regional",
+      "Public_postal_area_2021": "4553",
+      "Public_police_region": "North Coast"
+    },
+    "7105": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "9644": {
+      "Public_suburb": "Chatsworth",
+      "Public_lga": "Gympie Regional",
+      "Public_postal_area_2021": "4570",
+      "Public_police_region": "North Coast"
+    },
+    "11414": {
+      "Public_suburb": "Collingwood Park",
+      "Public_lga": "Ipswich City",
+      "Public_postal_area_2021": "4301",
+      "Public_police_region": "Southern"
+    },
+    "16334": {
+      "Public_suburb": "Annandale",
+      "Public_lga": "Townsville City",
+      "Public_postal_area_2021": "4814",
+      "Public_police_region": "Northern"
+    },
+    "16562": {
+      "Public_suburb": "Palm Island",
+      "Public_lga": "Palm Island Aboriginal Shire",
+      "Public_postal_area_2021": "4816",
+      "Public_police_region": "Northern"
+    },
+    "16771": {
+      "Public_suburb": "Bahrs Scrub",
+      "Public_lga": "Logan City",
+      "Public_postal_area_2021": "4207",
+      "Public_police_region": "South Eastern"
+    },
+    "16965": {
+      "Public_street": "Gympie Road",
+      "Public_street_distance_m": 6.4,
+      "Public_street_segment": "16015103990000153327",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "16968": {
+      "Public_suburb": "Robina",
+      "Public_lga": "Gold Coast City",
+      "Public_postal_area_2021": "4226",
+      "Public_police_region": "South Eastern"
+    },
+    "18649": {
+      "Public_suburb": "Boreen Point",
+      "Public_lga": "Noosa Shire",
+      "Public_postal_area_2021": "4565",
+      "Public_police_region": "North Coast"
+    },
+    "23863": {
+      "Public_suburb": "Wellesley Islands",
+      "Public_lga": "Mornington Shire",
+      "Public_postal_area_2021": "4892",
+      "Public_police_region": "Northern"
+    },
+    "28018": {
+      "Public_street": "Laurina Drive",
+      "Public_street_distance_m": 28.4,
+      "Public_street_segment": "16015103990000201053",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "30689": {
+      "Public_street": "Burwood Road",
+      "Public_street_distance_m": 6.6,
+      "Public_street_segment": "16015103990000056723",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "30890": {
+      "Public_suburb": "Palm Island",
+      "Public_lga": "Palm Island Aboriginal Shire",
+      "Public_postal_area_2021": "4816",
+      "Public_police_region": "Northern"
+    },
+    "32205": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "32662": {
+      "Public_suburb": "Bamaga",
+      "Public_lga": "Northern Peninsula Area Regional",
+      "Public_postal_area_2021": "4876",
+      "Public_police_region": "Far Northern"
+    },
+    "33126": {
+      "Public_suburb": "Buderim",
+      "Public_lga": "Sunshine Coast Regional",
+      "Public_postal_area_2021": "4556",
+      "Public_police_region": "North Coast"
+    },
+    "34323": {
+      "Public_street": "Palmerston Highway",
+      "Public_street_distance_m": 10.7,
+      "Public_street_segment": "16015103990000269036",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "34683": {
+      "Public_street": "Reservoir Road",
+      "Public_street_distance_m": 1.1,
+      "Public_street_segment": "16015103990000312883",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "nearby same-street reference",
+      "GNAF_reference_address": "84 RESERVOIR ROAD",
+      "GNAF_reference_street": "RESERVOIR ROAD",
+      "GNAF_reference_locality": "MANOORA",
+      "GNAF_reference_postcode": "4870",
+      "GNAF_reference_distance_m": 37.4,
+      "GNAF_address_id": "GAQLD156764529"
+    },
+    "35219": {
+      "Public_suburb": "Bucasia",
+      "Public_lga": "Mackay Regional",
+      "Public_postal_area_2021": "4750",
+      "Public_police_region": "Central"
+    },
+    "38014": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "38334": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "38652": {
+      "Public_suburb": "Caboolture",
+      "Public_lga": "Moreton Bay City",
+      "Public_postal_area_2021": "4510",
+      "Public_police_region": "North Coast"
+    },
+    "43161": {
+      "Public_street": "Brisbane Road",
+      "Public_street_distance_m": 2.3,
+      "Public_street_segment": "16015103990000046655",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "44929": {
+      "Public_suburb": "Cloncurry",
+      "Public_lga": "Cloncurry Shire",
+      "Public_postal_area_2021": "4824",
+      "Public_police_region": "Northern"
+    },
+    "49464": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "nearby address points do not resolve the street name"
+    },
+    "49474": {
+      "Public_street": "Mary River Bridge Road",
+      "Public_street_distance_m": 12.6,
+      "Public_street_segment": "17289771540000000003",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "50347": {
+      "Public_street": "Brighton Street",
+      "Public_street_distance_m": 9.9,
+      "Public_street_segment": "16015103990000046696",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "nearby same-street reference",
+      "GNAF_reference_address": "25 BRIGHTON STREET",
+      "GNAF_reference_street": "BRIGHTON STREET",
+      "GNAF_reference_locality": "BIGGERA WATERS",
+      "GNAF_reference_postcode": "4216",
+      "GNAF_reference_distance_m": 10.8,
+      "GNAF_address_id": "GAQLD156286244"
+    },
+    "52120": {
+      "Public_street": "Boyds Road",
+      "Public_street_distance_m": 1.0,
+      "Public_street_segment": "17780824460000000008",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "53076": {
+      "Public_suburb": "Witta",
+      "Public_lga": "Sunshine Coast Regional",
+      "Public_postal_area_2021": "4552",
+      "Public_police_region": "North Coast"
+    },
+    "53592": {
+      "Public_street": "Warrego Highway",
+      "Public_street_distance_m": 32.0,
+      "Public_street_segment": "16015103990000382340",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "54461": {
+      "Public_suburb": "Surfers Paradise",
+      "Public_lga": "Gold Coast City",
+      "Public_postal_area_2021": "4217",
+      "Public_police_region": "South Eastern"
+    },
+    "57082": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "57333": {
+      "Public_suburb": "Cannonvale",
+      "Public_lga": "Whitsunday Regional",
+      "Public_postal_area_2021": "4802",
+      "Public_police_region": "Central"
+    },
+    "60853": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "62983": {
+      "Public_suburb": "Mudgeeraba",
+      "Public_lga": "Gold Coast City",
+      "Public_postal_area_2021": "4213",
+      "Public_police_region": "South Eastern"
+    },
+    "64884": {
+      "Public_suburb": "Bellara",
+      "Public_lga": "Moreton Bay City",
+      "Public_postal_area_2021": "4507",
+      "Public_police_region": "North Coast"
+    },
+    "67327": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "nearby address points do not resolve the street name"
+    },
+    "67340": {
+      "Public_suburb": "Farnborough",
+      "Public_lga": "Livingstone Shire",
+      "Public_postal_area_2021": "4703",
+      "Public_police_region": "Central"
+    },
+    "73101": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "73183": {
+      "Public_street": "Kuttini Street",
+      "Public_street_distance_m": 3.7,
+      "Public_street_segment": "16015103990000196419",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "76780": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "76918": {
+      "Public_suburb": "Murarrie",
+      "Public_lga": "Brisbane City",
+      "Public_postal_area_2021": "4172",
+      "Public_police_region": "Brisbane"
+    },
+    "78695": {
+      "Public_suburb": "Surfers Paradise",
+      "Public_lga": "Gold Coast City",
+      "Public_postal_area_2021": "4217",
+      "Public_police_region": "South Eastern"
+    },
+    "79024": {
+      "Public_suburb": "Palm Island",
+      "Public_lga": "Palm Island Aboriginal Shire",
+      "Public_postal_area_2021": "4816",
+      "Public_police_region": "Northern"
+    },
+    "79089": {
+      "Public_suburb": "Palm Island",
+      "Public_lga": "Palm Island Aboriginal Shire",
+      "Public_postal_area_2021": "4816",
+      "Public_police_region": "Northern"
+    },
+    "79241": {
+      "Public_suburb": "Annerley",
+      "Public_lga": "Brisbane City",
+      "Public_postal_area_2021": "4103",
+      "Public_police_region": "Brisbane"
+    },
+    "81453": {
+      "Public_suburb": "Broadbeach",
+      "Public_lga": "Gold Coast City",
+      "Public_postal_area_2021": "4218",
+      "Public_police_region": "South Eastern"
+    },
+    "82283": {
+      "Public_suburb": "Bundall",
+      "Public_lga": "Gold Coast City",
+      "Public_postal_area_2021": "4217",
+      "Public_police_region": "South Eastern"
+    },
+    "84775": {
+      "Public_street": "Wyaralong Dam Access",
+      "Public_street_distance_m": 1.7,
+      "Public_street_segment": "16015103990000399057",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "87039": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "87349": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "88720": {
+      "Public_street": "Cardwell Lookout Access Road",
+      "Public_street_distance_m": 9.3,
+      "Public_street_segment": "16015103990000463388",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "89789": {
+      "Public_street": "Track",
+      "Public_street_distance_m": 15.1,
+      "Public_street_segment": "16015103990000553649",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "94819": {
+      "Public_street": "Road",
+      "Public_street_distance_m": 3.6,
+      "Public_street_segment": "16015103990000534775",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "96319": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "98033": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "98654": {
+      "Public_street": "Cooloola Beach Drive",
+      "Public_street_distance_m": 4.4,
+      "Public_street_segment": "16681802990000000143",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "101194": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "106688": {
+      "Public_suburb": "Chapel Hill",
+      "Public_lga": "Brisbane City",
+      "Public_postal_area_2021": "4069",
+      "Public_police_region": "Brisbane"
+    },
+    "106957": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "107547": {
+      "Public_suburb": "Palm Island",
+      "Public_lga": "Palm Island Aboriginal Shire",
+      "Public_postal_area_2021": "4816",
+      "Public_police_region": "Northern"
+    },
+    "107844": {
+      "Public_suburb": "Palm Island",
+      "Public_lga": "Palm Island Aboriginal Shire",
+      "Public_postal_area_2021": "4816",
+      "Public_police_region": "Northern"
+    },
+    "108238": {
+      "Public_street": "Freeman Road",
+      "Public_street_distance_m": 6.3,
+      "Public_street_segment": "16015103990000132429",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "108303": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "113775": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "117782": {
+      "Public_suburb": "South Trees",
+      "Public_lga": "Gladstone Regional",
+      "Public_postal_area_2021": "4680",
+      "Public_police_region": "Central"
+    },
+    "117873": {
+      "Public_suburb": "Coomera",
+      "Public_lga": "Gold Coast City",
+      "Public_postal_area_2021": "4209",
+      "Public_police_region": "South Eastern"
+    },
+    "118060": {
+      "Public_suburb": "Pioneer",
+      "Public_lga": "Mount Isa City",
+      "Public_postal_area_2021": "4825",
+      "Public_police_region": "Northern"
+    },
+    "118099": {
+      "Public_suburb": "Mooloolaba",
+      "Public_lga": "Sunshine Coast Regional",
+      "Public_postal_area_2021": "4557",
+      "Public_police_region": "North Coast"
+    },
+    "118867": {
+      "Public_suburb": "Broadbeach",
+      "Public_lga": "Gold Coast City",
+      "Public_postal_area_2021": "4218",
+      "Public_police_region": "South Eastern"
+    },
+    "120242": {
+      "Public_suburb": "Chapel Hill",
+      "Public_lga": "Brisbane City",
+      "Public_postal_area_2021": "4069",
+      "Public_police_region": "Brisbane"
+    },
+    "120535": {
+      "Public_street": "Pacific Motorway",
+      "Public_street_distance_m": 30.5,
+      "Public_street_segment": "16015103990000268251",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "122169": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "126129": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "126573": {
+      "Public_street": "Cooloola Beach Drive",
+      "Public_street_distance_m": 13.2,
+      "Public_street_segment": "16681802990000000018",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "126659": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "126692": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "127284": {
+      "Public_street": "Pine Creek - Yarrabah Road",
+      "Public_street_distance_m": 4.2,
+      "Public_street_segment": "16015103990000280048",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "127287": {
+      "Public_street": "Tank Street",
+      "Public_street_distance_m": 0.4,
+      "Public_street_segment": "16015103990000357107",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "nearby same-street reference",
+      "GNAF_reference_address": "37 TANK STREET",
+      "GNAF_reference_street": "TANK STREET",
+      "GNAF_reference_locality": "GLADSTONE CENTRAL",
+      "GNAF_reference_postcode": "4680",
+      "GNAF_reference_distance_m": 25.8,
+      "GNAF_address_id": "GAQLD162523529"
+    },
+    "127840": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "127841": {
+      "Public_street": "Camp Cable Road",
+      "Public_street_distance_m": 3.6,
+      "Public_street_segment": "16015103990000061061",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "127845": {
+      "Public_street": "Graham Avenue",
+      "Public_street_distance_m": 5.1,
+      "Public_street_segment": "16015103990000146966",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "129584": {
+      "Public_street": "Track",
+      "Public_street_distance_m": 10.3,
+      "Public_street_segment": "16015103990000548621",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "131484": {
+      "Public_street": "Cooloola Beach Drive",
+      "Public_street_distance_m": 18.3,
+      "Public_street_segment": "16681802990000000143",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "133792": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "136390": {
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "137795": {
+      "Public_suburb": "Browns Plains",
+      "Public_lga": "Logan City",
+      "Public_postal_area_2021": "4118",
+      "Public_police_region": "South Eastern"
+    },
+    "138305": {
+      "Public_suburb": "Main Beach",
+      "Public_lga": "Gold Coast City",
+      "Public_postal_area_2021": "4217",
+      "Public_police_region": "South Eastern"
+    },
+    "138832": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "142815": {
+      "Public_street": "Bermuda Street",
+      "Public_street_distance_m": 14.0,
+      "Public_street_segment": "16015103990000031198",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "142927": {
+      "Public_suburb": "Maudsland",
+      "Public_lga": "Gold Coast City",
+      "Public_postal_area_2021": "4210",
+      "Public_police_region": "South Eastern"
+    },
+    "143290": {
+      "Public_suburb": "Mount Louisa",
+      "Public_lga": "Townsville City",
+      "Public_postal_area_2021": "4814",
+      "Public_police_region": "Northern"
+    },
+    "143529": {
+      "Public_suburb": "Palm Island",
+      "Public_lga": "Palm Island Aboriginal Shire",
+      "Public_postal_area_2021": "4816",
+      "Public_police_region": "Northern"
+    },
+    "146640": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "nearby address points do not resolve the street name"
+    },
+    "147622": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "147798": {
+      "Public_suburb": "North Lakes",
+      "Public_lga": "Moreton Bay City",
+      "Public_postal_area_2021": "4509",
+      "Public_police_region": "North Coast"
+    },
+    "148805": {
+      "Public_street": "Gibson Road",
+      "Public_street_distance_m": 7.2,
+      "Public_street_segment": "16015103990000326332",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "149326": {
+      "Public_suburb": "Ferny Hills",
+      "Public_lga": "Moreton Bay City",
+      "Public_postal_area_2021": "4055",
+      "Public_police_region": "Brisbane"
+    },
+    "151980": {
+      "Public_suburb": "Bowen",
+      "Public_lga": "Whitsunday Regional",
+      "Public_postal_area_2021": "4805",
+      "Public_police_region": "Central"
+    },
+    "152079": {
+      "Public_suburb": "Parrearra",
+      "Public_lga": "Sunshine Coast Regional",
+      "Public_postal_area_2021": "4575",
+      "Public_police_region": "North Coast"
+    },
+    "154566": {
+      "Public_street": "Walker Street",
+      "Public_street_distance_m": 8.7,
+      "Public_street_segment": "16015103990000379498",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "154801": {
+      "Public_street": "Marymount Catholic College Access",
+      "Public_street_distance_m": 7.0,
+      "Public_street_segment": "16015103990000223683",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "156502": {
+      "Public_street": "Manurpa Street",
+      "Public_street_distance_m": 6.0,
+      "Public_street_segment": "16015103990000217760",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "157015": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "157663": {
+      "Public_suburb": "Larapinta",
+      "Public_lga": "Brisbane City",
+      "Public_postal_area_2021": "4110",
+      "Public_police_region": "Brisbane"
+    },
+    "163669": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "164589": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "165309": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "165314": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "169593": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "170628": {
+      "Public_street": "Track",
+      "Public_street_distance_m": 5.0,
+      "Public_street_segment": "16015103990000464463",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "171213": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "174169": {
+      "Public_suburb": "Farnborough",
+      "Public_lga": "Livingstone Shire",
+      "Public_postal_area_2021": "4703",
+      "Public_police_region": "Central"
+    },
+    "174429": {
+      "Public_suburb": "Palm Island",
+      "Public_lga": "Palm Island Aboriginal Shire",
+      "Public_postal_area_2021": "4816",
+      "Public_police_region": "Northern"
+    },
+    "174704": {
+      "Public_suburb": "Tannum Sands",
+      "Public_lga": "Gladstone Regional",
+      "Public_postal_area_2021": "4680",
+      "Public_police_region": "Central"
+    },
+    "175048": {
+      "Public_suburb": "Nerang",
+      "Public_lga": "Gold Coast City",
+      "Public_postal_area_2021": "4211",
+      "Public_police_region": "South Eastern"
+    },
+    "175062": {
+      "Public_suburb": "Burleigh Waters",
+      "Public_lga": "Gold Coast City",
+      "Public_postal_area_2021": "4220",
+      "Public_police_region": "South Eastern"
+    },
+    "175088": {
+      "Public_suburb": "Douglas",
+      "Public_lga": "Townsville City",
+      "Public_postal_area_2021": "4814",
+      "Public_police_region": "Northern"
+    },
+    "178495": {
+      "Public_street": "Brighton Street",
+      "Public_street_distance_m": 13.3,
+      "Public_street_segment": "16015103990000046696",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "nearby same-street reference",
+      "GNAF_reference_address": "7 BRIGHTON STREET",
+      "GNAF_reference_street": "BRIGHTON STREET",
+      "GNAF_reference_locality": "BIGGERA WATERS",
+      "GNAF_reference_postcode": "4216",
+      "GNAF_reference_distance_m": 18.2,
+      "GNAF_address_id": "GAQLD155024227"
+    },
+    "178998": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "nearby address points do not resolve the street name"
+    },
+    "179667": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "183207": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "nearby addresses agree on one candidate street",
+      "GNAF_reference_address": "95 TYGUM ROAD",
+      "GNAF_reference_street": "TYGUM ROAD",
+      "GNAF_reference_locality": "WATERFORD WEST",
+      "GNAF_reference_postcode": "4133",
+      "GNAF_reference_distance_m": 1.5,
+      "GNAF_address_id": "GAQLD155950871"
+    },
+    "183520": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "184370": {
+      "Public_street": "Cardwell Lookout Access Road",
+      "Public_street_distance_m": 9.8,
+      "Public_street_segment": "16015103990000463388",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "184808": {
+      "Public_suburb": "Carseldine",
+      "Public_lga": "Brisbane City",
+      "Public_postal_area_2021": "4034",
+      "Public_police_region": "Brisbane"
+    },
+    "185177": {
+      "Public_street": "Road",
+      "Public_street_distance_m": 1.2,
+      "Public_street_segment": "16015103990000439822",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "185849": {
+      "Public_suburb": "Moorooka",
+      "Public_lga": "Brisbane City",
+      "GNAF_lookup_status": "nearby same-street reference",
+      "GNAF_reference_address": "976 IPSWICH ROAD",
+      "GNAF_reference_street": "IPSWICH ROAD",
+      "GNAF_reference_locality": "MOOROOKA",
+      "GNAF_reference_postcode": "4105",
+      "GNAF_reference_distance_m": 35.3,
+      "GNAF_address_id": "GAQLD156858529"
+    },
+    "187233": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "187708": {
+      "Public_street": "Eli Creek Boardwalk",
+      "Public_street_distance_m": 16.8,
+      "Public_street_segment": "16015103990000405924",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "190267": {
+      "Public_street": "Walkway",
+      "Public_street_distance_m": 1.5,
+      "Public_street_segment": "16015103990000403918",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "190520": {
+      "Public_street": "Cooloola Beach Drive",
+      "Public_street_distance_m": 26.3,
+      "Public_street_segment": "16681802990000000018",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "192610": {
+      "Public_street": "Cooloola Beach Drive",
+      "Public_street_distance_m": 5.4,
+      "Public_street_segment": "16681802990000000143",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "192908": {
+      "Public_street": "Regent Street",
+      "Public_street_distance_m": 21.7,
+      "Public_street_segment": "16015103990000312238",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "nearby same-street reference",
+      "GNAF_reference_address": "6 REGENT STREET",
+      "GNAF_reference_street": "REGENT STREET",
+      "GNAF_reference_locality": "CALOUNDRA",
+      "GNAF_reference_postcode": "4551",
+      "GNAF_reference_distance_m": 18.6,
+      "GNAF_address_id": "GAQLD155129759"
+    },
+    "195105": {
+      "Public_street": "Kennedy Highway",
+      "Public_street_distance_m": 2.4,
+      "Public_street_segment": "16015103990000187356",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "195641": {
+      "Public_street": "Gardners Road",
+      "Public_street_distance_m": 10.9,
+      "Public_street_segment": "16015103990000522544",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "195964": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "196115": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "196599": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "196618": {
+      "Public_street": "Walkway",
+      "Public_street_distance_m": 0.8,
+      "Public_street_segment": "17413658020000000539",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "196970": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "nearby address points do not resolve the street name"
+    },
+    "197443": {
+      "Public_street": "Tuan Road",
+      "Public_street_distance_m": 2.2,
+      "Public_street_segment": "16015103990000531626",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "197490": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "198290": {
+      "Public_street": "Brightview Road",
+      "Public_street_distance_m": 0.1,
+      "Public_street_segment": "16015103990000044933",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "198291": {
+      "Public_street": "Waterworks Road",
+      "Public_street_distance_m": 2.9,
+      "Public_street_segment": "16015103990000384681",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "nearby same-street reference",
+      "GNAF_reference_address": "141 WATERWORKS ROAD",
+      "GNAF_reference_street": "WATERWORKS ROAD",
+      "GNAF_reference_locality": "ASHGROVE",
+      "GNAF_reference_postcode": "4060",
+      "GNAF_reference_distance_m": 28.5,
+      "GNAF_address_id": "GAQLD156226942"
+    },
+    "198292": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "198293": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "nearby address points do not resolve the street name"
+    },
+    "198358": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "nearby address points do not resolve the street name"
+    },
+    "198442": {
+      "Public_street": "Djarragun Way",
+      "Public_street_distance_m": 2.4,
+      "Public_street_segment": "16015103990000048946",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "198490": {
+      "Public_street": "Frenchmans Road",
+      "Public_street_distance_m": 13.7,
+      "Public_street_segment": "17212300740000000042",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "198506": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "nearby address points do not resolve the street name"
+    },
+    "198810": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "199103": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "199115": {
+      "Public_street": "Bruce Highway",
+      "Public_street_distance_m": 11.7,
+      "Public_street_segment": "16015103990000050574",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "199120": {
+      "Public_street": "Capricorn Highway",
+      "Public_street_distance_m": 0.1,
+      "Public_street_segment": "16015103990000062895",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "199121": {
+      "Public_street": "Kunwarara Road",
+      "Public_street_distance_m": 1.6,
+      "Public_street_segment": "16015103990000196020",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "199128": {
+      "Public_street": "Steve Irwin Way",
+      "Public_street_distance_m": 7.2,
+      "Public_street_segment": "16015103990000348107",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "199130": {
+      "Public_street": "Rose Almond Street",
+      "Public_street_distance_m": 10.7,
+      "Public_street_segment": "16015103990000321495",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "nearby same-street reference",
+      "GNAF_reference_address": "25-27 ROSE ALMOND STREET",
+      "GNAF_reference_street": "ROSE ALMOND STREET",
+      "GNAF_reference_locality": "FLAGSTONE",
+      "GNAF_reference_postcode": "4280",
+      "GNAF_reference_distance_m": 37.6,
+      "GNAF_address_id": "GAQLD719626111"
+    },
+    "199289": {
+      "Public_street": "Flagstonian Drive",
+      "Public_street_distance_m": 3.8,
+      "Public_street_segment": "16611522500000000023",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "199376": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "nearby address points do not resolve the street name"
+    },
+    "199523": {
+      "Public_street": "Myletts Lane",
+      "Public_street_distance_m": 0.9,
+      "Public_street_segment": "17490416910000000004",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "200635": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "200684": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "201068": {
+      "Public_street": "Brinsmead Road",
+      "Public_street_distance_m": 0.1,
+      "Public_street_segment": "16015103990000044237",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "201223": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "201735": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "202286": {
+      "Public_street": "Old Gympie Road",
+      "Public_street_distance_m": 1.3,
+      "Public_street_segment": "16015103990000262997",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "nearby same-street reference",
+      "GNAF_reference_address": "926 OLD GYMPIE ROAD",
+      "GNAF_reference_street": "OLD GYMPIE ROAD",
+      "GNAF_reference_locality": "BURPENGARY",
+      "GNAF_reference_postcode": "4505",
+      "GNAF_reference_distance_m": 38.7,
+      "GNAF_address_id": "GAQLD425658856"
+    },
+    "202292": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "nearby address points do not resolve the street name"
+    },
+    "202295": {
+      "Public_street": "Pacific Motorway",
+      "Public_street_distance_m": 1.5,
+      "Public_street_segment": "16015103990000268190",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "202298": {
+      "Public_street": "Lysdale Road",
+      "Public_street_distance_m": 1.4,
+      "Public_street_segment": "16015103990000212466",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "202310": {
+      "Public_street": "Old Maryborough Road",
+      "Public_street_distance_m": 13.3,
+      "Public_street_segment": "16015103990000262345",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "nearby same-street reference",
+      "GNAF_reference_address": "129-131 OLD MARYBOROUGH ROAD",
+      "GNAF_reference_street": "OLD MARYBOROUGH ROAD",
+      "GNAF_reference_locality": "PIALBA",
+      "GNAF_reference_postcode": "4655",
+      "GNAF_reference_distance_m": 48.0,
+      "GNAF_address_id": "GAQLD157015273"
+    },
+    "202311": {
+      "Public_street": "Atherton - Herberton Road",
+      "Public_street_distance_m": 6.2,
+      "Public_street_segment": "16015103990000015082",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "202315": {
+      "Public_street": "Wardoo Street",
+      "Public_street_distance_m": 3.6,
+      "Public_street_segment": "16015103990000383422",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "nearby same-street reference",
+      "GNAF_reference_address": "3 WARDOO STREET",
+      "GNAF_reference_street": "WARDOO STREET",
+      "GNAF_reference_locality": "SOUTHPORT",
+      "GNAF_reference_postcode": "4215",
+      "GNAF_reference_distance_m": 30.2,
+      "GNAF_address_id": "GAQLD157128937"
+    },
+    "202484": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "207080": {
+      "Public_street": "Track",
+      "Public_street_distance_m": 2.3,
+      "Public_street_segment": "16015103990000559063",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "207392": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "207764": {
+      "Public_street": "Moore Street",
+      "Public_street_distance_m": 26.6,
+      "Public_street_segment": "16015103990000237489",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "nearby same-street reference",
+      "GNAF_reference_address": "88-90 MOORE STREET",
+      "GNAF_reference_street": "MOORE STREET",
+      "GNAF_reference_locality": "TRINITY BEACH",
+      "GNAF_reference_postcode": "4879",
+      "GNAF_reference_distance_m": 24.9,
+      "GNAF_address_id": "GAQLD160608766"
+    },
+    "207818": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "208559": {
+      "Public_street": "Cooloola Beach Drive",
+      "Public_street_distance_m": 9.1,
+      "Public_street_segment": "16681802990000000143",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "209477": {
+      "Public_street": "Brighton Street",
+      "Public_street_distance_m": 2.5,
+      "Public_street_segment": "16015103990000046696",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "nearby same-street reference",
+      "GNAF_reference_address": "25 BRIGHTON STREET",
+      "GNAF_reference_street": "BRIGHTON STREET",
+      "GNAF_reference_locality": "BIGGERA WATERS",
+      "GNAF_reference_postcode": "4216",
+      "GNAF_reference_distance_m": 25.5,
+      "GNAF_address_id": "GAQLD156286244"
+    },
+    "210105": {
+      "Public_street": "Old Forest Drive",
+      "Public_street_distance_m": 13.8,
+      "Public_street_segment": "16015103990000262069",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "211221": {
+      "Public_street": "Road",
+      "Public_street_distance_m": 18.3,
+      "Public_street_segment": "16015103990000416301",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "213442": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "214533": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "220880": {
+      "Public_street": "Track",
+      "Public_street_distance_m": 1.0,
+      "Public_street_segment": "16015103990000557064",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "221381": {
+      "Public_street": "Tableland Road",
+      "Public_street_distance_m": 5.7,
+      "Public_street_segment": "16015103990000474457",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "222163": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "222763": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "223418": {
+      "Public_suburb": "Newmarket",
+      "Public_lga": "Brisbane City",
+      "Public_postal_area_2021": "4051",
+      "Public_police_region": "Brisbane"
+    },
+    "224995": {
+      "Public_suburb": "Mount Gravatt",
+      "Public_lga": "Brisbane City",
+      "Public_postal_area_2021": "4122",
+      "Public_police_region": "Brisbane"
+    },
+    "227201": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "228504": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "228546": {
+      "Public_street": "Cooloola Beach Drive",
+      "Public_street_distance_m": 17.5,
+      "Public_street_segment": "16015103990000083502",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "228863": {
+      "Public_street": "Brighton Street",
+      "Public_street_distance_m": 1.5,
+      "Public_street_segment": "16015103990000046697",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "nearby same-street reference",
+      "GNAF_reference_address": "83 BRIGHTON STREET",
+      "GNAF_reference_street": "BRIGHTON STREET",
+      "GNAF_reference_locality": "BIGGERA WATERS",
+      "GNAF_reference_postcode": "4216",
+      "GNAF_reference_distance_m": 19.9,
+      "GNAF_address_id": "GAQLD159667986"
+    },
+    "231774": {
+      "Public_street": "Road",
+      "Public_street_distance_m": 3.4,
+      "Public_street_segment": "16015103990000482556",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "234777": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "235234": {
+      "Public_street": "Barrs Road",
+      "Public_street_distance_m": 17.5,
+      "Public_street_segment": "16015103990000022305",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "244504": {
+      "Public_suburb": "Runaway Bay",
+      "Public_lga": "Gold Coast City",
+      "Public_postal_area_2021": "4216",
+      "Public_police_region": "South Eastern"
+    },
+    "245466": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "nearby address points do not resolve the street name"
+    },
+    "246191": {
+      "Public_suburb": "Newstead",
+      "Public_lga": "Brisbane City",
+      "Public_postal_area_2021": "4006",
+      "Public_police_region": "Brisbane"
+    },
+    "246951": {
+      "Public_suburb": "Heathwood",
+      "Public_lga": "Brisbane City",
+      "Public_postal_area_2021": "4110",
+      "Public_police_region": "Brisbane"
+    },
+    "247204": {
+      "Public_suburb": "Slacks Creek",
+      "Public_lga": "Logan City",
+      "Public_postal_area_2021": "4127",
+      "Public_police_region": "South Eastern"
+    },
+    "247409": {
+      "Public_suburb": "Cleveland",
+      "Public_lga": "Redland City",
+      "Public_postal_area_2021": "4163",
+      "Public_police_region": "Brisbane"
+    },
+    "248490": {
+      "Public_suburb": "Noosa Heads",
+      "Public_lga": "Noosa Shire",
+      "Public_postal_area_2021": "4567",
+      "Public_police_region": "North Coast"
+    },
+    "248576": {
+      "Public_suburb": "Narangba",
+      "Public_lga": "Moreton Bay City",
+      "Public_postal_area_2021": "4504",
+      "Public_police_region": "North Coast"
+    },
+    "248637": {
+      "Public_suburb": "Westbrook",
+      "Public_lga": "Toowoomba Regional",
+      "Public_postal_area_2021": "4350",
+      "Public_police_region": "Southern"
+    },
+    "248783": {
+      "Public_suburb": "Dutton Park",
+      "Public_lga": "Brisbane City",
+      "Public_postal_area_2021": "4102",
+      "Public_police_region": "Brisbane"
+    },
+    "250423": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "nearby address points do not resolve the street name"
+    },
+    "251162": {
+      "Public_street": "Mt Ida Fire Break",
+      "Public_street_distance_m": 4.3,
+      "Public_street_segment": "16015103990000460232",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "256004": {
+      "Public_suburb": "Palm Island",
+      "Public_lga": "Palm Island Aboriginal Shire",
+      "Public_postal_area_2021": "4816",
+      "Public_police_region": "Northern"
+    },
+    "257824": {
+      "Public_suburb": "Palm Island",
+      "Public_lga": "Palm Island Aboriginal Shire",
+      "Public_postal_area_2021": "4816",
+      "Public_police_region": "Northern"
+    },
+    "258019": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "nearby addresses agree on one candidate street",
+      "GNAF_reference_address": "309 FULHAM ROAD",
+      "GNAF_reference_street": "FULHAM ROAD",
+      "GNAF_reference_locality": "HEATLEY",
+      "GNAF_reference_postcode": "4814",
+      "GNAF_reference_distance_m": 35.9,
+      "GNAF_address_id": "GAQLD158025471"
+    },
+    "260656": {
+      "Public_suburb": "North Lakes",
+      "Public_lga": "Moreton Bay City",
+      "Public_postal_area_2021": "4509",
+      "Public_police_region": "North Coast"
+    },
+    "262297": {
+      "Public_street": "Powerful Owl Trail",
+      "Public_street_distance_m": 26.9,
+      "Public_street_segment": "16015103990000280751",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "262922": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "nearby address points do not resolve the street name"
+    },
+    "265112": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "266203": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "266821": {
+      "Public_street": "Milky Way Road",
+      "Public_street_distance_m": 7.7,
+      "Public_street_segment": "16015103990000232760",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "266943": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "nearby address points do not resolve the street name"
+    },
+    "267392": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "267650": {
+      "Public_street": "Stradbroke Way",
+      "Public_street_distance_m": 0.7,
+      "Public_street_segment": "16015103990000350417",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "268895": {
+      "Public_street": "Dawson Street",
+      "Public_street_distance_m": 1.0,
+      "Public_street_segment": "16015103990000096953",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "269348": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "269525": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "269693": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "270053": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "270126": {
+      "Public_street": "Albert Street",
+      "Public_street_distance_m": 2.1,
+      "Public_street_segment": "16015103990000003649",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "270635": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "nearby address points do not resolve the street name"
+    },
+    "270732": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "270950": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "270952": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "271107": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "nearby address points do not resolve the street name"
+    },
+    "271495": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "276911": {
+      "Public_street": "Reinke Road",
+      "Public_street_distance_m": 1.7,
+      "Public_street_segment": "16015103990000312397",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "277237": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "277288": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "nearby address points do not resolve the street name"
+    },
+    "278233": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "278373": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "278597": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "278675": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "281856": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "282186": {
+      "Public_suburb": "Bowen",
+      "Public_lga": "Whitsunday Regional",
+      "Public_postal_area_2021": "4805",
+      "Public_police_region": "Central"
+    },
+    "285325": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "286529": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "286987": {
+      "Public_street": "Old Roys Road",
+      "Public_street_distance_m": 22.7,
+      "Public_street_segment": "16015103990000263060",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "287646": {
+      "Public_street": "Brisbane Road",
+      "Public_street_distance_m": 3.4,
+      "Public_street_segment": "16015103990000046656",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "289181": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "289217": {
+      "Public_street": "Track",
+      "Public_street_distance_m": 14.7,
+      "Public_street_segment": "16086516970000000059",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "289673": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "290411": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "292061": {
+      "Public_street": "Cooloola Beach Drive",
+      "Public_street_distance_m": 31.5,
+      "Public_street_segment": "16681802990000000143",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "295592": {
+      "Public_street": "Beagle Camp Track",
+      "Public_street_distance_m": 2.0,
+      "Public_street_segment": "16015103990000559439",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "299820": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "300714": {
+      "Public_street": "Powerlink Access Break",
+      "Public_street_distance_m": 0.0,
+      "Public_street_segment": "16015103990000463960",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "302201": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "303385": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "305501": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "305582": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "305602": {
+      "Public_street": "Bruce Highway",
+      "Public_street_distance_m": 0.0,
+      "Public_street_segment": "17539760820000000049",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "305684": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "nearby address points do not resolve the street name"
+    },
+    "305837": {
+      "Public_street": "Track",
+      "Public_street_distance_m": 28.0,
+      "Public_street_segment": "16015103990000465523",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "305891": {
+      "Public_street": "Pacific Motorway",
+      "Public_street_distance_m": 1.4,
+      "Public_street_segment": "16015103990000268101",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "306101": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "306541": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "307806": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "308232": {
+      "Public_street": "Cathu Cauley Road",
+      "Public_street_distance_m": 17.0,
+      "Public_street_segment": "16015103990000067237",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "308997": {
+      "Public_suburb": "Palm Island",
+      "Public_lga": "Palm Island Aboriginal Shire",
+      "Public_postal_area_2021": "4816",
+      "Public_police_region": "Northern"
+    },
+    "309695": {
+      "Public_suburb": "Brisbane City",
+      "Public_lga": "Brisbane City",
+      "Public_postal_area_2021": "4000",
+      "Public_police_region": "Brisbane"
+    },
+    "312344": {
+      "Public_street": "Forestry Road",
+      "Public_street_distance_m": 5.7,
+      "Public_street_segment": "16015103990000128798",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "314124": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "314528": {
+      "Public_street": "Running Creek to Port Stewart Road",
+      "Public_street_distance_m": 6.8,
+      "Public_street_segment": "16015103990000409628",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "314539": {
+      "Public_street": "Cooloola Beach Drive",
+      "Public_street_distance_m": 9.5,
+      "Public_street_segment": "16015103990000083490",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "315350": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "nearby address points do not resolve the street name"
+    },
+    "319768": {
+      "Public_street": "Doug Jennings Park Access",
+      "Public_street_distance_m": 8.9,
+      "Public_street_segment": "16015103990000104503",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "320856": {
+      "Public_street": "River Farms Road",
+      "Public_street_distance_m": 7.8,
+      "Public_street_segment": "16982385070000000003",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "321873": {
+      "Public_street": "Miller Street",
+      "Public_street_distance_m": 22.5,
+      "Public_street_segment": "16015103990000233098",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "nearby same-street reference",
+      "GNAF_reference_address": "40 MILLER STREET",
+      "GNAF_reference_street": "MILLER STREET",
+      "GNAF_reference_locality": "BARGARA",
+      "GNAF_reference_postcode": "4670",
+      "GNAF_reference_distance_m": 17.3,
+      "GNAF_address_id": "GAQLD156250712"
+    },
+    "322651": {
+      "Public_street": "Bruce Highway",
+      "Public_street_distance_m": 0.9,
+      "Public_street_segment": "16015103990000446012",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "322713": {
+      "Public_street": "Powells Road",
+      "Public_street_distance_m": 4.8,
+      "Public_street_segment": "16015103990000284925",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "322924": {
+      "Public_street": "Carree",
+      "Public_street_distance_m": 8.0,
+      "Public_street_segment": "16015103990000562317",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "324173": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "324537": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "nearby address points do not resolve the street name"
+    },
+    "324585": {
+      "Public_street": "Elonera Street",
+      "Public_street_distance_m": 2.2,
+      "Public_street_segment": "16015103990000114326",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "nearby same-street reference",
+      "GNAF_reference_address": "21 ELONERA STREET",
+      "GNAF_reference_street": "ELONERA STREET",
+      "GNAF_reference_locality": "CURRIMUNDI",
+      "GNAF_reference_postcode": "4551",
+      "GNAF_reference_distance_m": 22.3,
+      "GNAF_address_id": "GAQLD156503280"
+    },
+    "324683": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "325229": {
+      "Public_street": "Old Mary Downs Road",
+      "Public_street_distance_m": 9.5,
+      "Public_street_segment": "17260688040000000001",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "326624": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "326729": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "328611": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "329420": {
+      "Public_street": "Track",
+      "Public_street_distance_m": 5.5,
+      "Public_street_segment": "16015103990000534334",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "330471": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "331002": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "331423": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "332157": {
+      "Public_street": "Track",
+      "Public_street_distance_m": 2.3,
+      "Public_street_segment": "16015103990000527444",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "335012": {
+      "Public_street": "Track",
+      "Public_street_distance_m": 11.3,
+      "Public_street_segment": "16015103990000519399",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "336045": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "336140": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "nearby address points do not resolve the street name"
+    },
+    "341155": {
+      "Public_suburb": "Wynnum West",
+      "Public_lga": "Brisbane City",
+      "Public_postal_area_2021": "4178",
+      "Public_police_region": "Brisbane"
+    },
+    "342416": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "343170": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "344100": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "346855": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "346913": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "347494": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "350822": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "351044": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "355584": {
+      "Public_suburb": "Crohamhurst",
+      "Public_lga": "Sunshine Coast Regional",
+      "Public_postal_area_2021": "4519",
+      "Public_police_region": "North Coast"
+    },
+    "355618": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "nearby addresses agree on one candidate street",
+      "GNAF_reference_address": "309 FULHAM ROAD",
+      "GNAF_reference_street": "FULHAM ROAD",
+      "GNAF_reference_locality": "HEATLEY",
+      "GNAF_reference_postcode": "4814",
+      "GNAF_reference_distance_m": 35.1,
+      "GNAF_address_id": "GAQLD158025471"
+    },
+    "356107": {
+      "Public_suburb": "Kelvin Grove",
+      "Public_lga": "Brisbane City",
+      "Public_postal_area_2021": "4059",
+      "Public_police_region": "Brisbane"
+    },
+    "356931": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "357389": {
+      "Public_suburb": "Palm Island",
+      "Public_lga": "Palm Island Aboriginal Shire",
+      "Public_postal_area_2021": "4816",
+      "Public_police_region": "Northern"
+    },
+    "358105": {
+      "Public_street": "Mount Lindesay Highway",
+      "Public_street_distance_m": 4.6,
+      "Public_street_segment": "16015103990000243558",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "358407": {
+      "Public_suburb": "St Lucia",
+      "Public_lga": "Brisbane City",
+      "Public_postal_area_2021": "4067",
+      "Public_police_region": "Brisbane"
+    },
+    "360004": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "363128": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "369520": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "371541": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "374247": {
+      "Public_street": "Prince Charles Hospital Access",
+      "Public_street_distance_m": 0.5,
+      "Public_street_segment": "16015103990000286288",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "374848": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "376689": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "379602": {
+      "Public_street": "Track",
+      "Public_street_distance_m": 6.0,
+      "Public_street_segment": "16015103990000482658",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "380377": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "381460": {
+      "Public_suburb": "Main Beach",
+      "Public_lga": "Gold Coast City",
+      "Public_postal_area_2021": "4217",
+      "Public_police_region": "South Eastern"
+    },
+    "382319": {
+      "Public_suburb": "Mount Sheridan",
+      "Public_lga": "Cairns Regional",
+      "Public_postal_area_2021": "4868",
+      "Public_police_region": "Far Northern"
+    },
+    "382358": {
+      "Public_suburb": "Palm Island",
+      "Public_lga": "Palm Island Aboriginal Shire",
+      "Public_postal_area_2021": "4816",
+      "Public_police_region": "Northern"
+    },
+    "382485": {
+      "Public_street": "Elm Street",
+      "Public_street_distance_m": 20.4,
+      "Public_street_segment": "16015103990000114172",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "nearby same-street reference",
+      "GNAF_reference_address": "11 ELM STREET",
+      "GNAF_reference_street": "ELM STREET",
+      "GNAF_reference_locality": "BLACKWATER",
+      "GNAF_reference_postcode": "4717",
+      "GNAF_reference_distance_m": 49.3,
+      "GNAF_address_id": "GAQLD156295053"
+    },
+    "382844": {
+      "Public_suburb": "Palm Island",
+      "Public_lga": "Palm Island Aboriginal Shire",
+      "Public_postal_area_2021": "4816",
+      "Public_police_region": "Northern"
+    },
+    "383172": {
+      "Public_suburb": "Palm Island",
+      "Public_lga": "Palm Island Aboriginal Shire",
+      "Public_postal_area_2021": "4816",
+      "Public_police_region": "Northern"
+    },
+    "384311": {
+      "Public_street": "Pacific Motorway",
+      "Public_street_distance_m": 3.4,
+      "Public_street_segment": "16015103990000268071",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "384699": {
+      "Public_street": "Booyong Street",
+      "Public_street_distance_m": 6.0,
+      "Public_street_segment": "16015103990000038847",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "nearby same-street reference",
+      "GNAF_reference_address": "10 BOOYONG STREET",
+      "GNAF_reference_street": "BOOYONG STREET",
+      "GNAF_reference_locality": "ALGESTER",
+      "GNAF_reference_postcode": "4115",
+      "GNAF_reference_distance_m": 23.2,
+      "GNAF_address_id": "GAQLD156202015"
+    },
+    "384748": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "385254": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "386994": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "387883": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "nearby address points do not resolve the street name"
+    },
+    "387943": {
+      "Public_street": "Cooloola Beach Drive",
+      "Public_street_distance_m": 33.8,
+      "Public_street_segment": "16681802990000000137",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "390520": {
+      "Public_street": "Running Creek to Port Stewart Road",
+      "Public_street_distance_m": 1.2,
+      "Public_street_segment": "17217418040000000017",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "390961": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "390974": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "392391": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "392543": {
+      "Public_street": "Road",
+      "Public_street_distance_m": 0.9,
+      "Public_street_segment": "16015103990000454003",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "394988": {
+      "Public_street": "Captain Billys Road",
+      "Public_street_distance_m": 16.5,
+      "Public_street_segment": "16015103990000457305",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "395349": {
+      "Public_street": "Ron McLean Drive",
+      "Public_street_distance_m": 8.7,
+      "Public_street_segment": "16015103990000320136",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "395909": {
+      "Public_street": "Track",
+      "Public_street_distance_m": 2.4,
+      "Public_street_segment": "16015103990000499743",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "396533": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "396536": {
+      "Public_street": "Wimble Street",
+      "Public_street_distance_m": 0.0,
+      "Public_street_segment": "16170298890000000036",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "396742": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "397549": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "397600": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "398337": {
+      "Public_suburb": "Moreton Bay",
+      "Public_lga": "Brisbane City",
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "398356": {
+      "Public_street": "Brolga Street",
+      "Public_street_distance_m": 5.1,
+      "Public_street_segment": "16015103990000046822",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "nearby same-street reference",
+      "GNAF_reference_address": "26 BROLGA STREET",
+      "GNAF_reference_street": "BROLGA STREET",
+      "GNAF_reference_locality": "CRAIGLIE",
+      "GNAF_reference_postcode": "4877",
+      "GNAF_reference_distance_m": 20.7,
+      "GNAF_address_id": "GAQLD155790910"
+    },
+    "398357": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "nearby address points do not resolve the street name"
+    },
+    "398704": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "402699": {
+      "Public_street": "Captain Crossing Track",
+      "Public_street_distance_m": 4.6,
+      "Public_street_segment": "16015103990000472623",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "402821": {
+      "Public_street": "Track",
+      "Public_street_distance_m": 2.4,
+      "Public_street_segment": "16015103990000550510",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "404918": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "408661": {
+      "Public_street": "Maryborough - Cooloola Road",
+      "Public_street_distance_m": 2.9,
+      "Public_street_segment": "16015103990000221677",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "409612": {
+      "Public_street": "Road",
+      "Public_street_distance_m": 22.4,
+      "Public_street_segment": "16015103990000525048",
+      "Reverse_street_status": "matched",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "411662": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "411720": {
+      "Reverse_street_status": "no named road within 35 m",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    },
+    "412075": {
+      "Reverse_street_status": "ambiguous nearby roads",
+      "GNAF_lookup_status": "no eligible nearby address on the expected street and locality"
+    }
+  }
+}

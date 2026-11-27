@@ -1,0 +1,32 @@
+{
+  "roads.geojson.gz": {
+    "features": 564950,
+    "provider": "Queensland Government",
+    "source": "https://queensland.opendatasoft.com/explore/assets/roads-and-tracks/"
+  },
+  "locality.geojson.gz": {
+    "features": 3359,
+    "provider": "Queensland Government",
+    "source": "https://www.data.qld.gov.au/dataset/locality-boundaries-queensland"
+  },
+  "postal.geojson.gz": {
+    "features": 455,
+    "provider": "Australian Bureau of Statistics",
+    "source": "https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs/edition-3-july-2021-june-2026/access-and-downloads/digital-boundary-files",
+    "scope": "2021 Postal Areas intersecting Queensland localities. Whole polygons retained at state borders."
+  },
+  "police.zip": {
+    "published_archive_modified": "2026-10-26",
+    "provider": "Queensland Police Service",
+    "source": "https://www.data.qld.gov.au/dataset/qps-regions"
+  },
+  "G-NAF Queensland 2026-08.parquet": {
+    "features": 3116786,
+    "scope": "Address-principal table filtered to the state field QLD, with 15 retained columns.",
+    "release": "2026-08",
+    "provider": "Geoscape Australia",
+    "source": "https://github.com/minus34/gnaf-loader#option-4---geoparquet-files-in-s3",
+    "source_path": "s3://minus34.com/opendata/geoscape-202608/geoparquet/address_principals/",
+    "attribution": "Incorporates G-NAF © Geoscape Australia, licensed by the Commonwealth of Australia under the Open Geo-coded National Address File End User Licence Agreement."
+  }
+}

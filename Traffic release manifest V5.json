@@ -1,0 +1,212 @@
+{
+  "notebook": "Traffic_Incidents_V5.ipynb",
+  "seed": 42,
+  "python": "3.14.4",
+  "packages": {
+    "numpy": "2.5.5",
+    "pandas": "3.1.1",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "folium": "1.0.0",
+    "scikit-learn": "1.9.1",
+    "imbalanced-learn": "0.14.2",
+    "mlxtend": "0.25.0",
+    "shapely": "2.2.0",
+    "pyproj": "3.8.0",
+    "pyshp": "3.1.9",
+    "ijson": "3.6.0",
+    "pyarrow": "26.0.1"
+  },
+  "inputs": [
+    {
+      "file": "Road crash locations.csv",
+      "bytes": 215864525,
+      "sha256": "16b9bdcee023615a631e0532b9d3df615763fff959084834dc95882d07a831de"
+    },
+    {
+      "file": "Factors in road crashes.csv",
+      "bytes": 342874,
+      "sha256": "ec7f0a0b7c1a0cc71f6a511a540ba683e58857f8485cc95a5721cba62eb2436a"
+    },
+    {
+      "file": "Road casualties.csv",
+      "bytes": 2434376,
+      "sha256": "3668622044647351b017a8fbf0dcb610b14773a38812e9ab457f3ba4d46a14e1"
+    },
+    {
+      "file": "Vehicle types.csv",
+      "bytes": 223173,
+      "sha256": "3ad71a66925a99d7aaf4a0d17235d6730357ddb4cac41876ff2d92f66a2bde73"
+    },
+    {
+      "file": "Driver demographics.csv",
+      "bytes": 1673073,
+      "sha256": "3403946970520f9c121f70b3fa97f62aeec9f4e1da9a05cdfec912b1820b6188"
+    },
+    {
+      "file": "Seatbelt restraints and helmet use.csv",
+      "bytes": 3616761,
+      "sha256": "e3bab8cf96bb0a479ac0615eb593b7bec63ed1ddbed382d9f770f31855a2584b"
+    },
+    {
+      "file": "Public spatial data/roads.geojson.gz",
+      "bytes": 108186022,
+      "sha256": "7f44bb358982e7333a0ce93f057113681b60d5a50e324e56f7a5274c68b0a92f"
+    },
+    {
+      "file": "Public spatial data/locality.geojson.gz",
+      "bytes": 11330614,
+      "sha256": "6cd9a6bfde4b5b97ee329b0d7b9dba67e8c56f84d4d7a556fc853e017945ebb7"
+    },
+    {
+      "file": "Public spatial data/postal.geojson.gz",
+      "bytes": 7962115,
+      "sha256": "bbc00a34e9db2de7463cf119ce1dddf38b61984b36708e816fbaff6b8cadfc70"
+    },
+    {
+      "file": "Public spatial data/police.zip",
+      "bytes": 1088971,
+      "sha256": "14e1080f16dfa066cca24c916b248d357f2f6d745130488777b65e6fa189d289"
+    },
+    {
+      "file": "Public spatial data/G-NAF Queensland 2026-08.parquet",
+      "bytes": 71685865,
+      "sha256": "c98593eb71a4b8fdac2975fc3faed4786d0a8413cc6a67272099236449fc973b"
+    }
+  ],
+  "exports": [
+    {
+      "file": "Road crash locations - cleaned V5.csv",
+      "bytes": 264315237,
+      "sha256": "597ec4de5b4e2d99d0ae2045ad01c24aba2e9a9267dd78267185cbc9a2befda3"
+    },
+    {
+      "file": "Traffic location and suburb reconciliation V5.csv",
+      "bytes": 298492,
+      "sha256": "b31527c6c1f63f9b6f5c2c0b9a12cac92681be110680fc077ea4304f3716cd1c"
+    },
+    {
+      "file": "Traffic casualty restraint and crash context V5.csv",
+      "bytes": 87507,
+      "sha256": "c4647e88fa4c5b9d358fc5b0ed18a3b6dad55cc5a279d0a1e8c71127f8131110"
+    }
+  ],
+  "analysis_exports": [
+    {
+      "file": "Tableau data V5/casualties.csv",
+      "bytes": 2372377,
+      "sha256": "074d703eed915b6d48697fc4b6d2f4086a53791593ff91ba77c07aa9e51b4256"
+    },
+    {
+      "file": "Tableau data V5/crash_factors.csv",
+      "bytes": 291355,
+      "sha256": "a292dc744eeed0b094e8e7f5077c9bfbce7fe408beda93c1af0a6cd60b69c89e"
+    },
+    {
+      "file": "Tableau data V5/crashes.csv",
+      "bytes": 222041585,
+      "sha256": "35a05596e88831c700f9191ed5499e2169c580a4b2fac74ee7147c06861589f0"
+    },
+    {
+      "file": "Tableau data V5/driver_demographics.csv",
+      "bytes": 1379058,
+      "sha256": "b8b4aec761a17c0dabadc38962a7a08e3e315be69305e254a35e10981b01c5c9"
+    },
+    {
+      "file": "Tableau data V5/restraints.csv",
+      "bytes": 3546496,
+      "sha256": "8c84180cecb22d50c7f840310970a9ebcdc7fe70f4208ff60e5cf64992204f40"
+    },
+    {
+      "file": "Tableau data V5/result_association_rules.csv",
+      "bytes": 5305,
+      "sha256": "06110aa8071e5e4db475e22308fe4d6f329ddbfff6f27492235fb68ad0620088"
+    },
+    {
+      "file": "Tableau data V5/result_equipment_fatality_rates.csv",
+      "bytes": 1077,
+      "sha256": "6a9de7a62575021e95489bace5ea0d3d1ca98b488f63e544558a20b57a6acfe8"
+    },
+    {
+      "file": "Tableau data V5/result_hotspot_persistence.csv",
+      "bytes": 804,
+      "sha256": "25f366396d7d1694d70b8031848d8e8ce77af5eb476d387296bff4cfd1367322"
+    },
+    {
+      "file": "Tableau data V5/result_hotspots.csv",
+      "bytes": 61983,
+      "sha256": "0cdb6fbf7ceccd96a4fde4a50b299555a88662e32080d1669758ed92275040f7"
+    },
+    {
+      "file": "Tableau data V5/result_matched_odds.csv",
+      "bytes": 1048,
+      "sha256": "f25a66cd9f4dee7d582cd8ed75a39133d3094e22a5035776b2010ed3e8503d03"
+    },
+    {
+      "file": "Tableau data V5/result_model_by_year.csv",
+      "bytes": 1312,
+      "sha256": "1ee1afc749db5499f8b531c57313f1e4fb20639474a8e07c64d6e2614a1063cf"
+    },
+    {
+      "file": "Tableau data V5/result_model_confusion.csv",
+      "bytes": 2677,
+      "sha256": "992bd654d81578637bef153325ef2587b1caccbbfee6076321158f131bf89508"
+    },
+    {
+      "file": "Tableau data V5/result_model_permutation_importance.csv",
+      "bytes": 1035,
+      "sha256": "6c54757ce497b74b2bd6c9ca696709a09520e04a71972f9c30adfa97cc197ebd"
+    },
+    {
+      "file": "Tableau data V5/result_model_precision_recall.csv",
+      "bytes": 77071,
+      "sha256": "f5c67f13716b32851d4f488c9fa05a7cf47be72000e8d67ae88c8eaf6b358b93"
+    },
+    {
+      "file": "Tableau data V5/result_model_summary.csv",
+      "bytes": 485,
+      "sha256": "ad4c0395ed2dbe12a1c78f031a09330f31b4db405de1905c32fcea91e5b7ebe2"
+    },
+    {
+      "file": "Tableau data V5/result_region_road_mix.csv",
+      "bytes": 1318,
+      "sha256": "94a7fbfb701ec1550b9f0e10edab0823190aa6742ef11e8f378dad38c860034b"
+    },
+    {
+      "file": "Tableau data V5/result_speed_severity_region_year.csv",
+      "bytes": 3275,
+      "sha256": "fe26920be414c4b52245c22ca8c28b667730efc890386a68f592f3bff08adffc"
+    },
+    {
+      "file": "Tableau data V5/result_wet_dry_standardised.csv",
+      "bytes": 426,
+      "sha256": "fcd58ee94d596094e271ada70c8f3d01f2cfe0f27eddc09ecfb49703e80bdb64"
+    },
+    {
+      "file": "Tableau data V5/vehicle_types.csv",
+      "bytes": 187588,
+      "sha256": "1fc38020120b74e6a350dee5b3942fc076dac2d6c604c1239eb2181da6ca3c62"
+    },
+    {
+      "file": "Queensland Traffic V5 - Esri Maps.html",
+      "bytes": 1596584,
+      "sha256": "e6a2b88168af83a1e039e08b8325a89e77dfd2d27d6aa4af0c615d7e0bc817a6"
+    }
+  ],
+  "recording_breaks": {
+    "last_property_damage_only_year": 2010,
+    "overseas_licensed_flag_last_year": 2016
+  },
+  "comparison_years": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "model_test_years": [
+    2023,
+    2024,
+    2025
+  ]
+}

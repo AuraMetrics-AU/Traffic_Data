@@ -1,0 +1,33 @@
+Model,Actual severity,Predicted severity,Share of actual,Crashes
+Random Forest + SMOTENC,Fatal,Fatal,0.4954545454545455,327
+Random Forest + SMOTENC,Fatal,Hospitalisation,0.36363636363636365,240
+Random Forest + SMOTENC,Fatal,Medical treatment,0.0696969696969697,46
+Random Forest + SMOTENC,Fatal,Minor injury,0.07121212121212121,47
+Random Forest + SMOTENC,Hospitalisation,Fatal,0.23851877688640855,4103
+Random Forest + SMOTENC,Hospitalisation,Hospitalisation,0.3468782699686083,5967
+Random Forest + SMOTENC,Hospitalisation,Medical treatment,0.202708987327055,3487
+Random Forest + SMOTENC,Hospitalisation,Minor injury,0.21189396581792816,3645
+Random Forest + SMOTENC,Medical treatment,Fatal,0.12349451734675534,1374
+Random Forest + SMOTENC,Medical treatment,Hospitalisation,0.2272155311882078,2528
+Random Forest + SMOTENC,Medical treatment,Medical treatment,0.28986158547546287,3225
+Random Forest + SMOTENC,Medical treatment,Minor injury,0.35942836598957395,3999
+Random Forest + SMOTENC,Minor injury,Fatal,0.11376847699717654,685
+Random Forest + SMOTENC,Minor injury,Hospitalisation,0.20893539279189505,1258
+Random Forest + SMOTENC,Minor injury,Medical treatment,0.31057963793389803,1870
+Random Forest + SMOTENC,Minor injury,Minor injury,0.3667164922770304,2208
+Random Forest + SMOTENC + road context,Fatal,Fatal,0.4409090909090909,291
+Random Forest + SMOTENC + road context,Fatal,Hospitalisation,0.44545454545454544,294
+Random Forest + SMOTENC + road context,Fatal,Medical treatment,0.06363636363636363,42
+Random Forest + SMOTENC + road context,Fatal,Minor injury,0.05,33
+Random Forest + SMOTENC + road context,Hospitalisation,Fatal,0.16376002790373212,2817
+Random Forest + SMOTENC + road context,Hospitalisation,Hospitalisation,0.44692477618881526,7688
+Random Forest + SMOTENC + road context,Hospitalisation,Medical treatment,0.18224625043599582,3135
+Random Forest + SMOTENC + road context,Hospitalisation,Minor injury,0.2070689454714568,3562
+Random Forest + SMOTENC + road context,Medical treatment,Fatal,0.08188028042423152,911
+Random Forest + SMOTENC + road context,Medical treatment,Hospitalisation,0.2754808556534244,3065
+Random Forest + SMOTENC + road context,Medical treatment,Medical treatment,0.2732338666187309,3040
+Random Forest + SMOTENC + road context,Medical treatment,Minor injury,0.36940499730361315,4110
+Random Forest + SMOTENC + road context,Minor injury,Fatal,0.0737419033383159,444
+Random Forest + SMOTENC + road context,Minor injury,Hospitalisation,0.25676797874107293,1546
+Random Forest + SMOTENC + road context,Minor injury,Medical treatment,0.2848364059126391,1715
+Random Forest + SMOTENC + road context,Minor injury,Minor injury,0.3846537120079721,2316

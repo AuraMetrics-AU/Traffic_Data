@@ -1,0 +1,13 @@
+Model,Test year,Coverage,Test crashes,Actual fatal crashes,Fatal predictions,Correct fatal predictions,Missed fatal crashes,False fatal alerts,Fatal precision (%),Fatal recall (%),Test period
+Training majority class,2023,12 months,13622,260,0,0,260,0,,0.0,2023
+Training majority class,2024,12 months,14358,273,0,0,273,0,,0.0,2024
+Training majority class,2025,Partial year,7029,127,0,0,127,0,,0.0,2025 (partial)
+Random Forest,2023,12 months,13622,260,0,0,260,0,,0.0,2023
+Random Forest,2024,12 months,14358,273,0,0,273,0,,0.0,2024
+Random Forest,2025,Partial year,7029,127,0,0,127,0,,0.0,2025 (partial)
+Random Forest + SMOTENC,2023,12 months,13622,260,2615,131,129,2484,5.009560229445507,50.38461538461539,2023
+Random Forest + SMOTENC,2024,12 months,14358,273,2659,132,141,2527,4.964272282813088,48.35164835164835,2024
+Random Forest + SMOTENC,2025,Partial year,7029,127,1215,64,63,1151,5.267489711934156,50.39370078740158,2025 (partial)
+Random Forest + SMOTENC + road context,2023,12 months,13622,260,1738,113,147,1625,6.501726121979287,43.46153846153846,2023
+Random Forest + SMOTENC + road context,2024,12 months,14358,273,1884,122,151,1762,6.475583864118896,44.688644688644686,2024
+Random Forest + SMOTENC + road context,2025,Partial year,7029,127,841,56,71,785,6.658739595719382,44.09448818897638,2025 (partial)
