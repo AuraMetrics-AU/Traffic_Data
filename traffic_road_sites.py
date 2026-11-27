@@ -194,9 +194,11 @@ def load_network(roads_path, cache_dir=None):
     return network
 
 
-def assign_sites(network, longitude, latitude, at_intersection):
+def assign_sites(network, longitude, latitude, at_intersection, junction_snap_m=JUNCTION_SNAP_M,
+                 link_snap_m=LINK_SNAP_M):
     """Site for each crash point: junction for intersection crashes in range, otherwise the nearest link.
 
+    The snap distances default to the module constants and can be varied for sensitivity tests.
     Returns a DataFrame aligned to the inputs with `Site`, `Site type`, `Site number` and `Snap distance (m)`.
     """
     longitude, latitude = np.asarray(longitude, float), np.asarray(latitude, float)
@@ -209,7 +211,7 @@ def assign_sites(network, longitude, latitude, at_intersection):
 
     if len(network.node_xy):
         node_distance, node = cKDTree(network.node_xy).query(xy[at_intersection],
-                                                             distance_upper_bound=JUNCTION_SNAP_M)
+                                                             distance_upper_bound=junction_snap_m)
         found = np.isfinite(node_distance)
         rows = np.flatnonzero(at_intersection)[found]
         site_type[rows] = 'Junction'
@@ -219,7 +221,7 @@ def assign_sites(network, longitude, latitude, at_intersection):
     remaining = np.flatnonzero(site_type == None)  # noqa: E711 - object array comparison
     points = shapely.points(xy[remaining])
     (point_index, part_index), part_distance = network.tree.query_nearest(
-        points, max_distance=LINK_SNAP_M, return_distance=True, all_matches=False)
+        points, max_distance=link_snap_m, return_distance=True, all_matches=False)
     rows = remaining[point_index]
     site_type[rows] = 'Link'
     site_number[rows] = network.link[part_index]

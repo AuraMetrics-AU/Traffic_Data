@@ -86,8 +86,8 @@
     },
     {
       "file": "traffic_road_sites.py",
-      "bytes": 10656,
-      "sha256": "178e624e004d929e1aa230b53b51f7b67a81eebdb259ab7308a85871119834a2"
+      "bytes": 10827,
+      "sha256": "6bb23b44671d07db3d007aa2be192d00b6aa02441f285fa7d3ca34be600b9590"
     }
   ],
   "exports": [
@@ -185,8 +185,13 @@
     },
     {
       "file": "Tableau data V6/result_unit_involvement.csv",
-      "bytes": 2462,
-      "sha256": "a3c58b01abb77ef4a925052282057e2a7e31dd6f1ec5fae07b1fb7d2ac34d55e"
+      "bytes": 2765,
+      "sha256": "223f952b2c77b916fe259eda69f5e2aedd954991d6692074f98d84f8ee6d3fba"
+    },
+    {
+      "file": "Tableau data V6/result_crash_composition.csv",
+      "bytes": 2551,
+      "sha256": "9b85b7044cf2c893994f890c423639696344ab010f1c54d5ff1ea565a45bc7a5"
     },
     {
       "file": "Tableau data V6/result_month_seasonality.csv",
@@ -212,6 +217,41 @@
       "file": "Tableau data V6/result_adjusted_odds.csv",
       "bytes": 5874,
       "sha256": "40573b8870512b5e66c0815fef9d33674a1fdcdabd45bd4fa2cb6af0b5ff9d8d"
+    },
+    {
+      "file": "Tableau data V6/result_model_bootstrap.csv",
+      "bytes": 2055,
+      "sha256": "9ca4829c56c3dce8e324f900c2bbfe48f82f6519e85c3c9be7a0eb182eacff11"
+    },
+    {
+      "file": "Tableau data V6/result_model_seed_stability.csv",
+      "bytes": 649,
+      "sha256": "e70dbc89468edc8cfdc1a4b639a5e7b3c415f0f3fa7421ad9be7d909d8964baa"
+    },
+    {
+      "file": "Tableau data V6/result_model_feature_ablation.csv",
+      "bytes": 907,
+      "sha256": "4a385dc45a321f67b642f07ee9b2f8bfc46068cd4cf32b5a08d722dacd09a4a8"
+    },
+    {
+      "file": "Tableau data V6/result_model_threshold_sensitivity.csv",
+      "bytes": 1127,
+      "sha256": "ebb5ef21f0f0782546579f6ac200d7a2864d6eeb19babb2d2a3d29640a0baf4d"
+    },
+    {
+      "file": "Tableau data V6/result_window_tolerance.csv",
+      "bytes": 100,
+      "sha256": "09e7394a31166b539f307407686c1d55675e68877ddb92de981799a598662238"
+    },
+    {
+      "file": "Tableau data V6/result_site_sensitivity.csv",
+      "bytes": 689,
+      "sha256": "e68dcde308b6f54951e40f5637280820594eae5711c7855528593dc9d306a7dd"
+    },
+    {
+      "file": "Tableau data V6/result_rule_recurrence.csv",
+      "bytes": 251,
+      "sha256": "dab0434dcd6366f5b3c13f6e540712ec1778901ad8e8438f9fb0af5f762cc290"
     },
     {
       "file": "Tableau data V6/result_association_rules.csv",
@@ -246,7 +286,7 @@
     {
       "file": "Queensland Traffic V6 - Esri Maps.html",
       "bytes": 1774292,
-      "sha256": "f89a4a122d7304f92d5aa47c26788f51d847aa2043835e106f384abe2259b8bc"
+      "sha256": "96f38bc3bf9ed2f4ee9bb152593ceabdfeb5753e92b6f7b7bda5f6c896bc74e0"
     }
   ],
   "recording_breaks": {

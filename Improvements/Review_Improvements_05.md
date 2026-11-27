@@ -90,7 +90,7 @@ Tableau already covers a lot (47 sheets, including an every-crash point map, mon
 
 ## 7. Implementation status (V6)
 
-Items 1–5 of the priority list are implemented in [`Traffic_Incidents_V6.ipynb`](Traffic_Incidents_V6.ipynb). The V5 notebook and its exports are unchanged.
+Items 1–5 of the priority list are implemented in [`Traffic_Incidents_V6.ipynb`](../Traffic_Incidents_V6.ipynb). The V5 notebook and its exports are unchanged.
 
 | # | Item | What V6 does | Main result |
 |---|---|---|---|
@@ -103,3 +103,8 @@ Items 1–5 of the priority list are implemented in [`Traffic_Incidents_V6.ipynb
 **Correction to §2.2.** The V6 site screening shows that stacked coordinates occur almost entirely at junctions: 26% of crashes at junction sites against 0.5% on links. Every stacked crash in the top 100 sites is at a junction. This matches intersection crashes being geocoded to the intersection point, so stacked points at junctions are expected and not an error. The V5 hotspot at the Gateway Arterial ramp is therefore not shown to be an artefact. V6 reports distinct crash points and stacked crashes per site so the distinction stays visible.
 
 **Not yet done from this review:** per-capita rates (needs ABS population data), the polygon-label cross-check (§2.3), the rule-redundancy filter and later-period rule check (§4.4), breakpoint and interrupted time-series analysis (§4.5), the map and chart upgrades in §5 other than the funnel plots and the new site map, and a V6 Tableau workbook (`build_tableau_workbook.py` still targets the V5 tables).
+
+---
+
+<!-- project-docs-nav -->
+**Project documentation:** [Index](../Write_Ups/Documentation_Index.md) · [Goals and tasks](../Write_Ups/Analytical_Goals_and_Tasks.md) · [Data and resources](../Write_Ups/Data_and_Resources.md) · [Data engineering](../Write_Ups/Data_Engineering.md) · [Analytics methods](../Write_Ups/Analytics_Methods.md) · [Model engineering](../Write_Ups/Model_Engineering.md) · [Implementation design](../Write_Ups/Implementation_Design.md) · [System architecture](../Write_Ups/Analytical_System_Architecture.md) · [Timeline and milestones](../Write_Ups/Timeline_and_Milestones.md) · [Risk management](../Write_Ups/Risk_Management.md)

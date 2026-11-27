@@ -1,6 +1,6 @@
-"""Package the notebook's Tableau exports into `Queensland Traffic V5.twbx`.
+"""Package the notebook's Tableau exports into `Queensland Traffic V6.twbx`.
 
-Run after `Traffic_Incidents_V5.ipynb` has written `Tableau data V5/`:
+Run after `Traffic_Incidents_V6.ipynb` has written `Tableau data V6/`:
 
     python build_tableau_workbook.py
 
@@ -19,13 +19,17 @@ that every dashboard refers to a real sheet.
 
 It writes three files:
 
-* `Queensland Traffic V5.twbx`: packaged workbook, data included.
-* `Queensland Traffic V5.twb`: the same workbook unpackaged. It reads from the
-  `Tableau data V5` folder beside it.
-* `Queensland Traffic V5 (direct extract).twbx`: an alternative that connects
+* `Queensland Traffic V6.twbx`: packaged workbook, data included.
+* `Queensland Traffic V6.twb`: the same workbook unpackaged. It reads from the
+  `Tableau data V6` folder beside it.
+* `Queensland Traffic V6 (direct extract).twbx`: an alternative that connects
   straight to the .hyper files, to try if the first does not load.
+
+The sheet and dashboard specifications match the V6 table layouts. The V5 version of this
+script, which built `Queensland Traffic V5.twbx`, is in Git history (commit d601b8e).
 """
 import csv
+import os
 import re
 from datetime import datetime
 import uuid
@@ -34,11 +38,12 @@ import zipfile
 from pathlib import Path
 
 BASE = Path(__file__).resolve().parent
-DATA_DIR = BASE / 'Tableau data V5'
+VERSION = 'V6'
+DATA_DIR = BASE / f'Tableau data {VERSION}'
 EXTRACT_DIR = DATA_DIR / 'Extracts'
-WORKBOOK = BASE / 'Queensland Traffic V5.twbx'
-ALTERNATIVE = BASE / 'Queensland Traffic V5 (direct extract).twbx'
-TWB_NAME = 'Queensland Traffic V5.twb'
+WORKBOOK = BASE / f'Queensland Traffic {VERSION}.twbx'
+ALTERNATIVE = BASE / f'Queensland Traffic {VERSION} (direct extract).twbx'
+TWB_NAME = f'Queensland Traffic {VERSION}.twb'
 USER_NS = 'http://www.tableausoftware.com/xml/user'
 ET.register_namespace('user', USER_NS)
 INK = '#173347'
@@ -48,11 +53,12 @@ INK = '#173347'
 # ----------------------------------------------------------------------------
 # Numeric columns are measures unless listed here.
 NUMERIC_DIMENSIONS = {
-    'Crash ref', 'Crash year', 'Hour', 'Test year', 'Rank', 'Cell rank', 'First year', 'Last year',
-    'Grid latitude', 'Grid longitude',
+    'Crash ref', 'Crash year', 'Crash_Year', 'Hour', 'Test year', 'Rank', 'Cell rank', 'First year', 'Last year',
+    'Grid latitude', 'Grid longitude', 'Recall target', 'Seed', 'Site number',
 }
-# Columns that look numeric but are labels.
-TEXT_COLUMNS = {'Postcode'}
+# Columns that look numeric but are labels, or that are blank in the first rows of the crash table
+# (road sites exist only for screened crashes), so their type cannot be inferred from a sample.
+TEXT_COLUMNS = {'Postcode', 'Road site', 'Road site type', 'Stable severity window', 'Site ID', 'Years'}
 # Measures whose natural aggregate is an average. The two outcome indicators are
 # blank for property-damage-only records, so their average is a share of injury crashes.
 AVERAGED = {'Serious outcome', 'Fatal outcome', 'Latitude', 'Longitude'}
@@ -71,14 +77,30 @@ CAPTIONS = {
     'result_equipment_fatality_rates': 'Result · fatality rates by protection',
     'result_speed_severity_region_year': 'Result · speed and severity by region-year',
     'result_wet_dry_standardised': 'Result · wet and dry roads by lighting',
-    'result_hotspots': 'Result · serious-crash hotspots',
-    'result_hotspot_persistence': 'Result · hotspot persistence',
+    'result_hotspots': 'Result · ranked road sites',
+    'result_site_screening': 'Result · all screened road sites',
+    'result_site_persistence': 'Result · road-site persistence',
+    'result_severity_mix_by_year': 'Result · severity mix by year',
+    'result_unit_involvement': 'Result · road users and vehicles involved',
+    'result_crash_composition': 'Result · crash types incl. cars',
+    'result_month_seasonality': 'Result · seasonal index by month',
+    'result_month_severity': 'Result · severity by month',
+    'result_area_funnel': 'Result · area funnel comparisons',
+    'result_dca_codes': 'Result · movement (DCA) codes',
+    'result_adjusted_odds': 'Result · adjusted odds (crash level)',
     'result_association_rules': 'Result · association rules',
     'result_model_summary': 'Result · model summary',
-    'result_model_by_year': 'Result · model by test year',
+    'result_model_by_year': 'Result · fatal alerts by evaluation year',
     'result_model_confusion': 'Result · model confusion matrix',
     'result_model_precision_recall': 'Result · model precision and recall',
     'result_model_permutation_importance': 'Result · model permutation importance',
+    'result_model_bootstrap': 'Result · reliability · bootstrap intervals',
+    'result_model_seed_stability': 'Result · reliability · seed stability',
+    'result_model_feature_ablation': 'Result · reliability · feature ablation',
+    'result_model_threshold_sensitivity': 'Result · reliability · threshold sensitivity',
+    'result_window_tolerance': 'Result · reliability · window tolerance',
+    'result_site_sensitivity': 'Result · reliability · site-screening sensitivity',
+    'result_rule_recurrence': 'Result · reliability · rule recurrence',
 }
 
 # Calculated fields: data source -> {caption: (formula, number format or None)}.
@@ -153,9 +175,11 @@ class DataSource:
         with (DATA_DIR / self.file).open(newline='', encoding='utf-8') as handle:
             reader = csv.reader(handle)
             header = next(reader)
-            # The crash table is large. Its first rows are enough to type the columns because
-            # the notebook writes every column with a single type.
-            sample = [row for _, row in zip(range(20_000), reader)]
+            # The crash table is large, so its columns are typed from the first 20,000 rows (columns that
+            # are blank there are listed in TEXT_COLUMNS). Every other table is small and is read in full,
+            # so a column that is blank in its first rows still gets the right type.
+            limit = 20_000 if key == 'crashes' else None
+            sample = [row for _, row in zip(range(limit), reader)] if limit else list(reader)
         self.fields = {}
         for position, name in enumerate(header):
             datatype = 'string' if name in TEXT_COLUMNS else sniff_type(row[position] for row in sample)
@@ -500,44 +524,107 @@ SHEETS = [
           rows=[ref('Lighting')], cols=[ref('Road surface')],
           color=ref('Fatal or hospitalisation share (%)', 'avg'),
           text=ref('Fatal or hospitalisation share (%)', 'avg')),
+    # --- Road sites (excess serious crashes) ------------------------------------------------
+    Sheet('Road sites with excess serious crashes 2015–2024', 'result_hotspots', 'Circle', rows=[LAT], cols=[LON],
+          size=ref('Injury crashes', 'sum'), color=ref('Shrunk excess serious crashes', 'sum'),
+          detail=[ref('Rank'), ref('Site ID')],
+          tooltip=[ref('Road names'), ref('Suburb'), ref('Site type'), ref('Serious crashes', 'sum'),
+                   ref('Expected serious', 'sum'), ref('Fatal crashes', 'sum'), ref('Motorcycle crashes (%)', 'avg'),
+                   ref('Crashes on stacked points', 'sum')]),
+    Sheet('Ranked road sites 2015–2024', 'result_hotspots', 'Bar',
+          rows=[ref('Rank'), ref('Road names'), ref('Suburb')], cols=[ref('Shrunk excess serious crashes', 'sum')],
+          color=ref('Motorcycle crashes (%)', 'avg'),
+          tooltip=[ref('Site type'), ref('Injury crashes', 'sum'), ref('Serious crashes', 'sum'),
+                   ref('Expected serious', 'sum'), ref('Fatal crashes', 'sum'), ref('Police region')]),
+    Sheet('Do ranked sites keep their excess next period', 'result_site_persistence', 'Bar',
+          rows=[ref('Earlier ranking')], cols=[ref('Later excess ÷ earlier raw excess', 'avg')],
+          text=ref('Later excess ÷ earlier raw excess', 'avg'),
+          tooltip=[ref('Excess serious 2015–2019', 'sum'), ref('Excess serious 2020–2024', 'sum'),
+                   ref('Serious crashes 2015–2019', 'sum'), ref('Serious crashes 2020–2024', 'sum'),
+                   ref('Still in later top 100', 'sum')]),
+    # --- Severity drift ------------------------------------------------------------------------
+    Sheet('Hospitalisation share of injury crashes by year', 'result_severity_mix_by_year', 'Bar',
+          rows=[ref('Hospitalisation', 'avg')], cols=[ref('Crash_Year')], color=ref('Stable window'),
+          tooltip=[ref('Fatal or hospitalisation', 'avg'), ref('Medical treatment', 'avg'),
+                   ref('Injury crashes', 'sum')]),
+    Sheet('Fatal share of injury crashes by year (severity mix)', 'result_severity_mix_by_year', 'Bar',
+          rows=[ref('Fatal', 'avg')], cols=[ref('Crash_Year')], color=ref('Stable window'),
+          tooltip=[ref('Injury crashes', 'sum')]),
+    # --- Road users and crash types (crash level) ---------------------------------------------
+    Sheet('Fatal share by crash type 2020–2024', 'result_crash_composition', 'Bar', rows=[ref('Crash type')],
+          cols=[ref('Fatal (%)', 'avg')], text=ref('Fatal (%)', 'avg'),
+          tooltip=[ref('Fatal 95% low', 'avg'), ref('Fatal 95% high', 'avg'), ref('Injury crashes', 'sum'),
+                   ref('Fatal crashes', 'sum')],
+          sort=(ref('Crash type'), ref('Fatal (%)', 'avg'))),
+    Sheet('Share of fatal crashes by crash type 2020–2024', 'result_crash_composition', 'Bar',
+          rows=[ref('Crash type')], cols=[ref('Share of fatal crashes (%)', 'avg')],
+          text=ref('Share of fatal crashes (%)', 'avg'),
+          tooltip=[ref('Share of injury crashes (%)', 'avg'), ref('Fatal crashes', 'sum')],
+          sort=(ref('Crash type'), ref('Share of fatal crashes (%)', 'avg'))),
+    Sheet('Fatal share with and without each road user 2020–2024', 'result_unit_involvement', 'Square',
+          rows=[ref('Road user or vehicle')], cols=[ref('Status')], color=ref('Fatal (%)', 'avg'),
+          text=ref('Fatal (%)', 'avg'),
+          tooltip=[ref('Fatal 95% low', 'avg'), ref('Fatal 95% high', 'avg'), ref('Injury crashes', 'sum'),
+                   ref('Fatal or hospitalisation (%)', 'avg')]),
+    Sheet('Movements behind fatal crashes 2020–2024', 'result_dca_codes', 'Bar',
+          rows=[ref('Movement (DCA description)')], cols=[ref('Fatal crashes', 'sum')], color=ref('Fatal (%)', 'avg'),
+          tooltip=[ref('Share of all fatal crashes (%)', 'avg'), ref('Injury crashes', 'sum'),
+                   ref('Fatal 95% low', 'avg'), ref('Fatal 95% high', 'avg')],
+          sort=(ref('Movement (DCA description)'), ref('Fatal crashes', 'sum'))),
+    # --- Areas and adjusted odds -----------------------------------------------------------------
+    Sheet('Areas against their road mix (funnel)', 'result_area_funnel', 'Circle',
+          rows=[ref('Recorded ÷ expected', 'avg')], cols=[ref('Expected serious', 'sum')], color=ref('Funnel band'),
+          detail=[ref('Area type'), ref('Area')], tooltip=[ref('Injury crashes', 'sum'), ref('z', 'avg')],
+          filters=['Area type']),
+    Sheet('Areas ranked by recorded ÷ expected', 'result_area_funnel', 'Bar',
+          rows=[ref('Area type'), ref('Area')], cols=[ref('Recorded ÷ expected', 'avg')], color=ref('Funnel band'),
+          tooltip=[ref('Injury crashes', 'sum'), ref('Expected serious', 'sum'), ref('z', 'avg')],
+          sort=(ref('Area'), ref('Recorded ÷ expected', 'avg')), filters=['Area type']),
+    Sheet('Adjusted odds of a serious outcome (crash level) 2020–2024', 'result_adjusted_odds', 'Circle',
+          rows=[ref('Field'), ref('Term')], cols=[ref('Adjusted odds ratio', 'avg')],
+          text=ref('Adjusted odds ratio', 'avg'),
+          tooltip=[ref('95% low', 'avg'), ref('95% high', 'avg'), ref('Crashes with term', 'sum')]),
     Sheet('Conditions associated with serious outcomes', 'result_association_rules', 'Bar',
           rows=[ref('Conditions')], cols=[ref('Lift', 'avg')], color=ref('Serious share', 'avg'),
           tooltip=[ref('Serious crashes', 'sum'), ref('Support', 'avg')],
           sort=(ref('Conditions'), ref('Lift', 'avg'))),
-    # --- Hotspots ---------------------------------------------------------------------------
-    Sheet('Serious-crash hotspot map 2011–2024', 'result_hotspots', 'Circle', rows=[LAT], cols=[LON],
-          size=ref('Serious crashes', 'sum'), color=ref('Fatal crashes', 'sum'), detail=[ref('Rank')],
-          tooltip=[ref('Main street'), ref('Intersecting street'), ref('Suburb'), ref('Extent (m)', 'avg')]),
-    Sheet('Serious-crash hotspot list 2011–2024', 'result_hotspots', 'Bar',
-          rows=[ref('Rank'), ref('Suburb'), ref('Main street')], cols=[ref('Serious crashes', 'sum')],
-          color=ref('Fatal crashes', 'sum'), tooltip=[ref('Intersecting street'), ref('Police region')]),
-    Sheet('Do the top 100 grid cells stay on top', 'result_hotspot_persistence', 'Circle',
-          rows=[ref('Serious crashes 2020–2024', 'avg')], cols=[ref('Serious crashes 2015–2019', 'avg')],
-          detail=[ref('Cell rank')]),
-    # --- Model evaluation -------------------------------------------------------------------
-    Sheet('Model summary', 'result_model_summary', 'Bar', rows=[ref('Model')],
-          cols=[ref('Fatal average precision', 'avg')], text=ref('Fatal average precision', 'avg'),
-          tooltip=[ref('Accuracy', 'avg'), ref('Macro F1', 'avg'), ref('Fatal recall', 'avg'),
-                   ref('Fatal precision', 'avg')]),
+    # --- Model evaluation ---------------------------------------------------------------------
+    *[Sheet(name, 'result_model_summary', 'Square', rows=[ref('Outcome'), ref('Model')],
+            cols=[ref('Evaluation set')], color=ref(measure, 'avg'), text=ref(measure, 'avg'),
+            tooltip=[ref('Outcome share', 'avg'), ref('Crashes', 'sum')])
+      for name, measure in [('Model ranking quality (average precision)', 'Average precision'),
+                            ('Model discrimination (ROC AUC)', 'ROC AUC'),
+                            ('Model calibration (Brier skill)', 'Brier skill')]],
     *[Sheet(name, 'result_model_by_year', 'Square', rows=[ref('Model')], cols=[ref('Test period')],
             color=ref(measure, aggregation), text=ref(measure, aggregation),
             tooltip=[ref('Test crashes', 'sum'), ref('Actual fatal crashes', 'sum')])
       for name, measure, aggregation in [
-          ('Fatal recall by test year', 'Fatal recall (%)', 'avg'),
-          ('Fatal precision by test year', 'Fatal precision (%)', 'avg'),
-          ('Missed fatal crashes by test year', 'Missed fatal crashes', 'sum'),
-          ('False fatal alerts by test year', 'False fatal alerts', 'sum')]],
-    Sheet('Model confusion matrix', 'result_model_confusion', 'Square',
+          ('Fatal recall by evaluation year', 'Fatal recall (%)', 'avg'),
+          ('Fatal precision by evaluation year', 'Fatal precision (%)', 'avg'),
+          ('False fatal alerts by evaluation year', 'False fatal alerts', 'sum')]],
+    Sheet('Fatal alerts on the test year (confusion matrix)', 'result_model_confusion', 'Square',
           rows=[ref('Model'), ref('Actual severity')], cols=[ref('Predicted severity')],
-          color=ref('Share of actual', 'avg'), text=ref('Share of actual', 'avg'),
-          tooltip=[ref('Crashes', 'sum')]),
+          color=ref('Share of actual', 'avg'), text=ref('Crashes', 'sum'), tooltip=[ref('Share of actual', 'avg')]),
     Sheet('Fatal precision and recall', 'result_model_precision_recall', 'Circle',
           rows=[ref('Fatal precision', 'avg')], cols=[ref('Fatal recall', 'avg')], color=ref('Model'),
           aggregate=False),
     Sheet('Model permutation importance', 'result_model_permutation_importance', 'Bar',
-          rows=[ref('Input field')], cols=[ref('Mean drop in fatal average precision', 'avg')],
+          rows=[ref('Outcome'), ref('Input field')], cols=[ref('Mean drop in average precision', 'avg')],
           tooltip=[ref('Standard deviation', 'avg')],
-          sort=(ref('Input field'), ref('Mean drop in fatal average precision', 'avg'))),
+          sort=(ref('Input field'), ref('Mean drop in average precision', 'avg'))),
+    # --- Reliability experiments --------------------------------------------------------------
+    Sheet('R1 · bootstrap 95% intervals (test year)', 'result_model_bootstrap', 'Square',
+          rows=[ref('Outcome'), ref('Metric')], cols=[ref('Model')], color=ref('Estimate', 'avg'),
+          text=ref('Estimate', 'avg'), tooltip=[ref('95% low', 'avg'), ref('95% high', 'avg')]),
+    Sheet('R3 · feature ablation', 'result_model_feature_ablation', 'Bar',
+          rows=[ref('Outcome'), ref('Inputs')], cols=[ref('Average precision', 'avg')],
+          text=ref('Average precision', 'avg'), tooltip=[ref('ROC AUC', 'avg'), ref('Outcome share', 'avg')]),
+    Sheet('R4 · fatal alert threshold sensitivity', 'result_model_threshold_sensitivity', 'Circle',
+          rows=[ref('Test precision (%)', 'avg')], cols=[ref('Test recall (%)', 'avg')], color=ref('Model'),
+          detail=[ref('Recall target')], tooltip=[ref('False alerts per correct alert', 'avg'), ref('Alerts', 'sum')]),
+    Sheet('R6 · site-screening robustness', 'result_site_sensitivity', 'Bar', rows=[ref('Variant')],
+          cols=[ref('Top-100 overlap with baseline', 'sum')], text=ref('Top-100 overlap with baseline', 'sum'),
+          tooltip=[ref('Top-20 overlap with baseline', 'sum'), ref('k', 'avg'), ref('Crashes placed', 'sum')]),
 ]
 
 # ----------------------------------------------------------------------------
@@ -548,15 +635,22 @@ SHEETS = [
 FILTER_NOTE = ('Use the filters on the right. Click a mark to filter the other charts, and click it again to clear. '
                'Shares are of recorded injury crashes, so they describe severity, not the risk of crashing.')
 DASHBOARDS = [
-    dict(name='Start here', title='Queensland traffic crashes  ·  V5',
+    dict(name='Start here', title='Queensland traffic crashes  ·  V6',
          note='Property-damage-only crashes are recorded to 2010 only, so the charts count injury crashes. '
-              '2025 is a partial year. ' + FILTER_NOTE,
+              '2025 is a partial year. The hospitalisation share of injury crashes rises over the series, so compare '
+              'serious shares within 2020–2024 (see "Severity drift"). ' + FILTER_NOTE,
          grid=[['Recorded crashes by year and record type', 'Injury crashes by year and severity'],
                ['Serious share of injury crashes by year', 'Injury crashes by police region']],
          filters=('Injury crashes by year and severity', 'crashes', CRASH_FILTERS), action=True),
+    dict(name='Severity drift', title='How injury severity is graded changes over time',
+         note='The hospitalisation share of injury crashes rises from about 30% to 49% while the fatal share stays '
+              'level. Orange bars are the stable window (2020–2024) used for serious-share comparisons, rules and '
+              'models; long-run trends should use the fatal share. Calculated in the notebook; not filterable.',
+         grid=[['Hospitalisation share of injury crashes by year', 'Fatal share of injury crashes by year (severity mix)']],
+         filters=None, action=False),
     dict(name='When', title='When crashes happen and when they are most severe',
          note='Colour and labels show the share of injury crashes that were fatal or led to hospitalisation. '
-              + FILTER_NOTE,
+              'For comparisons of severity, set the year filter to 2020–2024. ' + FILTER_NOTE,
          grid=[['Serious share by day and hour', 'Serious share by day and hour'],
                ['Injury crashes by month', 'Injury crashes by hour and severity']],
          filters=('Serious share by day and hour', 'crashes', CRASH_FILTERS), action=True),
@@ -571,6 +665,13 @@ DASHBOARDS = [
          grid=[['Injury crashes by crash nature', 'Fatal share by movement group'],
                ['Serious share by roadway feature', 'Serious share by lighting']],
          filters=('Injury crashes by crash nature', 'crashes', CRASH_FILTERS), action=True),
+    dict(name='Road users and crash types', title='Who was in the crash, and which movements are fatal  ·  2020–2024',
+         note='Crash types are mutually exclusive and include cars: car-on-car crashes are half of injury crashes '
+              'but rarely fatal; single-car crashes are the largest group of fatal crashes. The grid compares fatal '
+              'shares with and without each road user. Hover for 95% intervals. Calculated in the notebook.',
+         grid=[['Fatal share by crash type 2020–2024', 'Share of fatal crashes by crash type 2020–2024'],
+               ['Fatal share with and without each road user 2020–2024', 'Movements behind fatal crashes 2020–2024']],
+         filters=None, action=False),
     dict(name='Who', title='Casualties, protection and recorded flags',
          note='These charts use the grouped source files, which share only crash year and police region with the '
               'crash table. The two filters apply to the casualty charts. Rates are fatalities per 100 recorded '
@@ -578,27 +679,45 @@ DASHBOARDS = [
          grid=[['Casualties by year and severity', 'Fatalities per 100 casualties by age and road user'],
                ['Fatalities per 100 casualties by protection', 'Serious share with a young driver']],
          filters=('Casualties by year and severity', 'casualties', CASUALTY_FILTERS), action=False),
-    dict(name='Like for like', title='Comparisons that allow for differences in mix  ·  fixed periods',
-         note='Calculated in the notebook for 2020–2024 and unaffected by filters. Recorded ÷ expected compares each '
-              "region's serious crashes with the number its mix of remoteness and speed zone predicts. Odds ratios "
-              'compare crashes within the same year and police region. Hover for 95% intervals.',
-         grid=[['Region severity and road mix 2020–2024', 'Matched odds of a serious outcome 2020–2024'],
-               ['Speed and severity, region-years pooled', 'Speed and severity within region and year']],
+    dict(name='Areas', title='Areas compared with their road mix  ·  2020–2024',
+         note='Recorded ÷ expected serious crashes, where expected comes from each crash\'s remoteness and speed '
+              'zone. Colour shows whether an area is outside the 95% or 99.8% funnel limits, which narrow as areas '
+              'get larger. Use the filter to choose council areas, police districts or state electorates. These are '
+              'areas to investigate, not rankings.',
+         grid=[['Areas against their road mix (funnel)', 'Areas ranked by recorded ÷ expected']],
+         filters=('Areas against their road mix (funnel)', 'result_area_funnel', ['Area type']), action=False),
+    dict(name='Like for like', title='Comparisons that allow for differences in mix  ·  2020–2024',
+         note='Calculated in the notebook and unaffected by filters. Recorded ÷ expected compares each region with '
+              'its road mix. Matched odds compare crashes within year and police region (grouped tables); adjusted '
+              'odds hold road setting, time, region and year constant for each crash. Hover for 95% intervals.',
+         grid=[['Region severity and road mix 2020–2024', 'Matched odds of a serious outcome 2020–2024',
+                'Adjusted odds of a serious outcome (crash level) 2020–2024'],
+               ['Speed and severity, region-years pooled', 'Speed and severity within region and year',
+                'Adjusted odds of a serious outcome (crash level) 2020–2024']],
          filters=None, action=False),
-    dict(name='Hotspots', title='Serious-crash hotspots  ·  2011–2024',
-         note='A hotspot has at least ten fatal or hospitalisation crashes, each within 50 m of another. Counts '
-              'reflect traffic volume as well as risk. The scatter follows the 100 grid cells with the most serious '
-              'crashes in 2015–2019 into 2020–2024: most record fewer, so expect a fall at any site chosen for a '
-              'high count.',
-         grid=[['Serious-crash hotspot map 2011–2024', 'Serious-crash hotspot list 2011–2024'],
-               ['Serious-crash hotspot map 2011–2024', 'Do the top 100 grid cells stay on top']],
+    dict(name='Road sites', title='Road sites with excess serious crashes  ·  2015–2024',
+         note='Junctions and road links ranked by empirical-Bayes excess: serious crashes above what each crash\'s '
+              'year, site type, speed zone and remoteness predict, shrunk for small sites. Size shows injury crashes; '
+              'colour shows shrunk excess. Many top links are motorcycle routes (see tooltip). Sites ranked by count '
+              'kept no excess in the next period; sites ranked by excess did.',
+         grid=[['Road sites with excess serious crashes 2015–2024', 'Ranked road sites 2015–2024'],
+               ['Road sites with excess serious crashes 2015–2024', 'Do ranked sites keep their excess next period']],
          filters=None, action=False),
-    dict(name='Model evaluation', title='Severity models on held-out crashes  ·  2023–2025',
-         note='Each cell is one model and test year. Precision is blank when a model made no fatal predictions. '
-              'The partial 2025 release covers fewer months. About 1.9% of test crashes were fatal, which is the '
-              'precision a random ranking would achieve.',
-         grid=[['Fatal recall by test year', 'Fatal precision by test year', 'False fatal alerts by test year'],
-               ['Fatal precision and recall', 'Model confusion matrix', 'Model permutation importance']],
+    dict(name='Model evaluation', title='Severity models on held-out years  ·  trained 2020–2022',
+         note='Validation 2023 sets the fatal alert threshold; 2024 is the test; 2025 is partial. "V5 test years '
+              'pooled" compares with V5 (best fatal average precision 0.091). About 1.9% of crashes are fatal, '
+              'which is the average precision a random ranking would achieve.',
+         grid=[['Model ranking quality (average precision)', 'Fatal precision by evaluation year',
+                'False fatal alerts by evaluation year'],
+               ['Fatal precision and recall', 'Fatal alerts on the test year (confusion matrix)',
+                'Model permutation importance']],
+         filters=None, action=False),
+    dict(name='Reliability', title='How far the results can be trusted  ·  reliability experiments',
+         note='R1: bootstrap intervals on the 2024 test metrics (hover for limits). R3: fatal ranking falls to 0.05 '
+              'with only road, time and environment inputs. R4: each dot is a recall target set on 2023 and applied to '
+              '2024. R6: how many of the top-100 road sites survive changes to the screening settings.',
+         grid=[['R1 · bootstrap 95% intervals (test year)', 'R3 · feature ablation'],
+               ['R4 · fatal alert threshold sensitivity', 'R6 · site-screening robustness']],
          filters=None, action=False),
 ]
 WIDTH, HEIGHT = 1400, 880
@@ -770,7 +889,12 @@ def build():
     sources = {key: DataSource(key, number) for number, key in enumerate(CAPTIONS, start=1)}
     # Build one extract per table. The same .hyper files serve all three workbook files.
     EXTRACT_DIR.mkdir(exist_ok=True)
-    with HyperProcess(Telemetry.DO_NOT_SEND_USAGE_DATA_TO_TABLEAU, parameters={'log_config': ''}) as hyper:
+    parameters = {'log_config': ''}
+    # Hyper creates a domain socket in /tmp by default. Set HYPER_DOMAIN_SOCKET_DIR to use another
+    # directory when /tmp is full or not writable.
+    if os.environ.get('HYPER_DOMAIN_SOCKET_DIR'):
+        parameters['domain_socket_dir'] = os.environ['HYPER_DOMAIN_SOCKET_DIR']
+    with HyperProcess(Telemetry.DO_NOT_SEND_USAGE_DATA_TO_TABLEAU, parameters=parameters) as hyper:
         for source in sources.values():
             source.write_extract(hyper)
     print(f'Wrote {len(sources)} extracts to {EXTRACT_DIR.relative_to(BASE)}/.')
@@ -779,7 +903,7 @@ def build():
     xml_text = workbook_xml(sources, 'extract')
     package(WORKBOOK, xml_text, sources, include_csv=True)
 
-    # Unpackaged copy of the same workbook. It reads from the `Tableau data V5` folder beside it,
+    # Unpackaged copy of the same workbook. It reads from the data folder beside it,
     # so the two must stay together.
     replacements = {'directory="Data"': f'directory="{DATA_DIR.name}"',
                     'dbname="Data/Extracts/': f'dbname="{DATA_DIR.name}/Extracts/'}
