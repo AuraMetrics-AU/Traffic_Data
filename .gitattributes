@@ -3,3 +3,6 @@ Archive/Road[[:space:]]crash[[:space:]]locations[[:space:]]-[[:space:]]cleaned[[
 Road[[:space:]]crash[[:space:]]locations[[:space:]]-[[:space:]]cleaned[[:space:]]V5.csv filter=lfs diff=lfs merge=lfs -text
 Public[[:space:]]spatial[[:space:]]data/roads.geojson.gz filter=lfs diff=lfs merge=lfs -text
 Road[[:space:]]crash[[:space:]]locations.csv filter=lfs diff=lfs merge=lfs -text
+Road[[:space:]]crash[[:space:]]locations[[:space:]]-[[:space:]]cleaned[[:space:]]V6.csv filter=lfs diff=lfs merge=lfs -text
+Tableau[[:space:]]data[[:space:]]V6/crashes.csv filter=lfs diff=lfs merge=lfs -text
+Queensland[[:space:]]Traffic[[:space:]]V6.twbx filter=lfs diff=lfs merge=lfs -text

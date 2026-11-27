@@ -1,0 +1,7 @@
+Model,Test year,Evaluation set,Coverage,Test crashes,Actual fatal crashes,Fatal predictions,Correct fatal predictions,Missed fatal crashes,False fatal alerts,Fatal precision (%),Fatal recall (%),Test period
+Logistic regression,2023,Validation,12 months,13622,260,1119,131,129,988,11.706881143878462,50.38461538461539,2023
+Logistic regression,2024,Test,12 months,14358,273,1251,124,149,1127,9.91207034372502,45.42124542124542,2024
+Logistic regression,2025,Partial year,Partial year,7029,127,591,57,70,534,9.644670050761421,44.881889763779526,2025 (partial)
+Gradient boosting,2023,Validation,12 months,13622,260,1320,132,128,1188,10.0,50.76923076923077,2023
+Gradient boosting,2024,Test,12 months,14358,273,1548,137,136,1411,8.850129198966409,50.18315018315018,2024
+Gradient boosting,2025,Partial year,Partial year,7029,127,679,60,67,619,8.836524300441827,47.24409448818898,2025 (partial)

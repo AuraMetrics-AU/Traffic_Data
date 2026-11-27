@@ -1,0 +1,9 @@
+Model,Actual severity,Predicted severity,Share of actual,Crashes
+Logistic regression,Fatal,Fatal,0.4542124542124542,124
+Logistic regression,Fatal,Not fatal,0.5457875457875457,149
+Logistic regression,Not fatal,Fatal,0.0800141995030174,1127
+Logistic regression,Not fatal,Not fatal,0.9199858004969826,12958
+Gradient boosting,Fatal,Fatal,0.5018315018315018,137
+Gradient boosting,Fatal,Not fatal,0.4981684981684982,136
+Gradient boosting,Not fatal,Fatal,0.10017749378771743,1411
+Gradient boosting,Not fatal,Not fatal,0.8998225062122825,12674

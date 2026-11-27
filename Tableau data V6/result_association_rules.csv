@@ -1,0 +1,137 @@
+Conditions,Support,Serious share,Lift,Serious crashes
+Crash_Nature = Head-on + Crash_Speed_Limit = 100 - 110 km/h,0.00651416906820365,0.8493150684931506,1.7030267598653965,434
+Crash_Nature = Head-on + Loc_ABS_Remoteness = Outer Regional,0.005163304514889529,0.7908045977011494,1.5857029289484554,344
+Crash_Speed_Limit = 100 - 110 km/h + Loc_ABS_Remoteness = Very Remote,0.00606388088376561,0.7875243664717348,1.5791254858187223,404
+Crash_Speed_Limit = 100 - 110 km/h + Loc_ABS_Remoteness = Remote,0.008045148895292988,0.7745664739884393,1.553142622133443,536
+Crash_Roadway_Feature = No Roadway Feature + Loc_ABS_Remoteness = Very Remote,0.007910062439961575,0.77046783625731,1.544924129380817,527
+Crash_Traffic_Control = No traffic control + Loc_ABS_Remoteness = Very Remote,0.008825648414985591,0.7596899224806202,1.5233125081366652,588
+Crash_Nature = Fall from vehicle + Loc_ABS_Remoteness = Inner Regional,0.008420389048991355,0.7540322580645161,1.511967891449176,561
+Crash_Roadway_Feature = No Roadway Feature + Loc_ABS_Remoteness = Remote,0.010026416906820365,0.7531003382187148,1.5100992275171148,668
+Crash_Traffic_Control = No traffic control + Loc_ABS_Remoteness = Remote,0.011557396733909701,0.751953125,1.5077988623367242,770
+Crash_Road_Horiz_Align = Straight + Loc_ABS_Remoteness = Very Remote,0.0067243035542747355,0.7504187604690117,1.504722190377639,448
+Crash_Nature = Fall from vehicle + Loc_ABS_Remoteness = Outer Regional,0.0058687560038424595,0.7490421455938697,1.50196183434798,391
+Loc_ABS_Remoteness = Very Remote,0.009245917387127761,0.7484811664641555,1.5008369720853518,616
+Crash_Speed_Limit = 100 - 110 km/h + Loc_ABS_Remoteness = Outer Regional,0.030484510086455332,0.7453211009174312,1.4945004823789483,2031
+Crash_Nature = Head-on + Loc_ABS_Remoteness = Inner Regional,0.007549831892411143,0.7407952871870398,1.485425426279099,503
+Crash_Lighting_Condition = Darkness - Not lighted + Loc_ABS_Remoteness = Outer Regional,0.014379202689721421,0.7380585516178737,1.47993778796693,958
+Loc_ABS_Remoteness = Remote,0.012953290105667627,0.7357203751065644,1.475249330978744,863
+Crash_Nature = Fall from vehicle + Crash_Road_Horiz_Align = Curved - view open,0.009260926993275697,0.735399284862932,1.4746054883136093,617
+Crash_Nature = Head-on + Crash_Roadway_Feature = No Roadway Feature,0.019437439961575407,0.7353776263486655,1.4745620591661197,1295
+Crash_Nature = Hit object + Crash_Speed_Limit = 100 - 110 km/h,0.03576789145052834,0.7339082229750539,1.4716156458041891,2383
+Crash_Road_Horiz_Align = Straight + Loc_ABS_Remoteness = Remote,0.008750600384245917,0.7314930991217063,1.4667728958010162,583
+Crash_Lighting_Condition = Daylight + Loc_ABS_Remoteness = Very Remote,0.006153938520653218,0.7308377896613191,1.4654588845601553,410
+Crash_Lighting_Condition = Darkness - Not lighted + Crash_Speed_Limit = 100 - 110 km/h,0.021283621517771373,0.7305512622359609,1.4648843464518346,1418
+Crash_Nature = Fall from vehicle + Crash_Roadway_Feature = No Roadway Feature,0.01838676753121998,0.7282996432818074,1.4603694526577722,1225
+Crash_Nature = Head-on + Crash_Road_Horiz_Align = Straight,0.013013328530259365,0.7255230125523012,1.4548018175008883,867
+Crash_Nature = Head-on + Crash_Traffic_Control = No traffic control,0.02303974543707973,0.7237152286657237,1.4511768914291572,1535
+Crash_Lighting_Condition = Daylight + Loc_ABS_Remoteness = Remote,0.008045148895292988,0.7233468286099866,1.4504381842325813,536
+Crash_Lighting_Condition = Darkness - Not lighted + Crash_Speed_Limit = 80 - 90 km/h,0.00984630163304515,0.7232635060639471,1.4502711078072716,656
+Crash_Nature = Fall from vehicle + Crash_Traffic_Control = No traffic control,0.02428554274735831,0.7226440375167485,1.4490289639293281,1618
+Crash_Nature = Hit object + Crash_Speed_Limit = 80 - 90 km/h,0.01927233429394813,0.7221597300337458,1.44805784186385,1284
+Crash_Road_Horiz_Align = Curved - view obscured + Crash_Speed_Limit = 80 - 90 km/h,0.005523535062439962,0.71875,1.4412207307530247,368
+Crash_Nature = Hit object + Loc_ABS_Remoteness = Outer Regional,0.027632684918347743,0.7182988685134608,1.440316132421622,1841
+Crash_Lighting_Condition = Darkness - Not lighted + Crash_Road_Horiz_Align = Curved - view open,0.017050912584053793,0.7176247631080227,1.438964431990276,1136
+Crash_Nature = Head-on + Crash_Road_Horiz_Align = Curved - view open,0.008990754082612872,0.7173652694610778,1.438444101383701,599
+Crash_Lighting_Condition = Darkness - Not lighted + Crash_Nature = Hit object,0.02490093659942363,0.7141627206198881,1.4320224251664186,1659
+Crash_Lighting_Condition = Daylight + Crash_Nature = Head-on,0.017155979827089336,0.7139287945034354,1.4315533619754675,1143
+Crash_Nature = Head-on,0.02560638808837656,0.7135089920535341,1.4307115838973894,1706
+Crash_Nature = Angle + Crash_Speed_Limit = 100 - 110 km/h,0.007654899135446686,0.7103064066852368,1.4242898344368031,510
+Crash_Road_Horiz_Align = Curved - view obscured + Crash_Speed_Limit = 100 - 110 km/h,0.005673631123919308,0.7039106145251398,1.4114651412184107,378
+Crash_Lighting_Condition = Darkness - Not lighted + Crash_Traffic_Control = No traffic control,0.048451008645533145,0.7029616724738676,1.4095623447570866,3228
+Crash_Road_Horiz_Align = Curved - view obscured + Loc_ABS_Remoteness = Inner Regional,0.010851945244956772,0.7026239067055393,1.4088850647188904,723
+Crash_Lighting_Condition = Darkness - Not lighted + Crash_Nature = Overturned,0.007144572526416907,0.7020648967551623,1.407764151008726,476
+Crash_Lighting_Condition = Darkness - Not lighted + Crash_Roadway_Feature = No Roadway Feature,0.04204190682036504,0.700600300150075,1.4048273760668935,2801
+Crash_Lighting_Condition = Dawn/Dusk + Crash_Nature = Hit object,0.00834534101825168,0.6967418546365914,1.3970905111451355,556
+Crash_Lighting_Condition = Darkness - Not lighted,0.051002641690682034,0.6963114754098361,1.3962275247608775,3398
+Crash_Road_Horiz_Align = Curved - view open + Loc_ABS_Remoteness = Outer Regional,0.02403037944284342,0.6954821894005213,1.3945646598031762,1601
+Crash_Nature = Overturned + Crash_Speed_Limit = 100 - 110 km/h,0.014844500480307396,0.6940350877192982,1.3916629652744996,989
+Crash_Nature = Overturned + Crash_Road_Horiz_Align = Straight,0.012983309317963496,0.6892430278884463,1.3820540387058282,865
+Crash_Nature = Hit object + Loc_ABS_Remoteness = Inner Regional,0.0368335734870317,0.6891322662173547,1.3818319419871499,2454
+Crash_Nature = Hit object + Crash_Road_Horiz_Align = Curved - view open,0.05049231508165226,0.6890618598934862,1.3816907648691876,3364
+Crash_Nature = Fall from vehicle,0.02913364553314121,0.6887863733144074,1.3811383656082308,1941
+Crash_Lighting_Condition = Darkness - Not lighted + Loc_ABS_Remoteness = Inner Regional,0.018011527377521614,0.6876790830945558,1.3789180530937124,1200
+Crash_Nature = Hit object + Crash_Roadway_Feature = No Roadway Feature,0.09501080691642651,0.6869980464510528,1.377552454305512,6330
+Crash_Lighting_Condition = Darkness - Not lighted + Crash_Road_Horiz_Align = Straight,0.02845821325648415,0.6862106406080347,1.3759735664801573,1896
+Crash_Nature = Hit object + Crash_Traffic_Control = No traffic control,0.11645953410182516,0.6854845834437672,1.3745176935940993,7759
+Crash_Lighting_Condition = Darkness - Not lighted + Crash_Road_Horiz_Align = Curved - view obscured,0.005493515850144092,0.6853932584269663,1.3743345708011256,366
+Crash_Nature = Overturned + Loc_ABS_Remoteness = Outer Regional,0.007895052833813641,0.6848958333333334,1.3733371456088606,526
+Crash_Nature = Hit object + Crash_Speed_Limit = 70 km/h,0.008420389048991355,0.6824817518248175,1.368496485691225,561
+Crash_Nature = Hit object,0.12878242074927954,0.6821976623996183,1.3679268362039418,8580
+Crash_Nature = Hit animal + Crash_Roadway_Feature = No Roadway Feature,0.0050582372718539865,0.6808080808080809,1.3651404796170945,337
+Crash_Lighting_Condition = Daylight + Crash_Nature = Fall from vehicle,0.02104346781940442,0.6799224054316197,1.3633645440160187,1402
+Crash_Nature = Hit object + Crash_Road_Horiz_Align = Curved - view obscured,0.011692483189241114,0.6791630340017437,1.3618418701418218,779
+Crash_Nature = Hit animal + Crash_Traffic_Control = No traffic control,0.005463496637848223,0.6791044776119403,1.3617244542351745,364
+Crash_Nature = Hit animal,0.005523535062439962,0.6789667896678967,1.3614483655821932,368
+Crash_Nature = Hit object + Crash_Road_Horiz_Align = Straight,0.06659762247838617,0.6776114844227245,1.3587307391253716,4437
+Crash_Roadway_Feature = Intersection - T-Junction + Crash_Speed_Limit = 100 - 110 km/h,0.00747478386167147,0.6766304347826086,1.3567635612760043,498
+Crash_Speed_Limit = 100 - 110 km/h + Loc_ABS_Remoteness = Inner Regional,0.029433837656099904,0.675973802137194,1.355446896815398,1961
+Crash_Lighting_Condition = Daylight + Crash_Nature = Hit object,0.06559197886647454,0.6750077232004943,1.3535097378712373,4370
+Crash_Nature = Overturned,0.025276176753122,0.6727926488214143,1.3490681224064862,1684
+Crash_Nature = Overturned + Crash_Traffic_Control = No traffic control,0.024360590778097983,0.6726067136344799,1.3486952895077224,1623
+Crash_Nature = Overturned + Crash_Roadway_Feature = No Roadway Feature,0.021853986551392892,0.6718966312874942,1.3472714489525677,1456
+Crash_Roadway_Feature = No Roadway Feature + Loc_ABS_Remoteness = Outer Regional,0.054289745437079734,0.6716805942432683,1.3468382565118735,3617
+Crash_Nature = Hit pedestrian + Crash_Speed_Limit = 60 km/h,0.013043347742555235,0.6710424710424711,1.3455587067577677,869
+Crash_Road_Horiz_Align = Curved - view open + Crash_Speed_Limit = 100 - 110 km/h,0.027797790585975025,0.6710144927536232,1.345502605345735,1852
+Crash_Speed_Limit = 80 - 90 km/h + Loc_ABS_Remoteness = Inner Regional,0.021508765609990394,0.6702525724976613,1.343974820624938,1433
+Crash_Lighting_Condition = Darkness - Lighted + Crash_Nature = Hit object,0.029944164265129684,0.6690140845070423,1.3414914334014683,1995
+Crash_Road_Horiz_Align = Curved - view obscured + Crash_Roadway_Feature = No Roadway Feature,0.02168888088376561,0.6689814814814815,1.341426058575279,1445
+Crash_Traffic_Control = No traffic control + Loc_ABS_Remoteness = Outer Regional,0.06745317002881844,0.6661725466943373,1.3357936480757098,4494
+Crash_Nature = Head-on + Loc_ABS_Remoteness = Major Cities,0.011932636887608069,0.6647157190635451,1.3328724512998744,795
+Crash_Nature = Fall from vehicle + Crash_Speed_Limit = 60 km/h,0.011782540826128722,0.6646909398814564,1.3328227646620765,785
+Crash_Speed_Limit = 80 - 90 km/h + Loc_ABS_Remoteness = Outer Regional,0.01170749279538905,0.6604572396274344,1.3243334476897066,780
+Crash_Nature = Overturned + Crash_Road_Horiz_Align = Curved - view open,0.009576128722382324,0.6597724922440537,1.322960408212479,638
+Crash_Nature = Head-on + Crash_Speed_Limit = 60 km/h,0.009245917387127761,0.6588235294117647,1.321057570081545,616
+Crash_Nature = Hit object + Crash_Roadway_Feature = Intersection - T-Junction,0.015354827089337176,0.6574550128534704,1.3183134526078857,1023
+Crash_Road_Horiz_Align = Curved - view obscured + Loc_ABS_Remoteness = Outer Regional,0.006048871277617675,0.6563517915309446,1.316101298951353,403
+Crash_Road_Horiz_Align = Curved - view obscured + Crash_Traffic_Control = No traffic control,0.02512608069164265,0.6551859099804306,1.3137635004675918,1674
+Crash_Nature = Hit object + Crash_Traffic_Control = Operating traffic lights,0.005478506243996158,0.6541218637992832,1.311629899890551,365
+Crash_Lighting_Condition = Daylight + Crash_Nature = Overturned,0.014724423631123919,0.654,1.3113855414434479,981
+Crash_Nature = Hit object + Crash_Speed_Limit = 60 km/h,0.0442783381364073,0.6527992918787342,1.3089779095325584,2950
+Crash_Nature = Hit object + Loc_ABS_Remoteness = Major Cities,0.05634606147934678,0.6512838306731437,1.305939142080525,3754
+Crash_Lighting_Condition = Darkness - Lighted + Crash_Nature = Hit pedestrian,0.006499159462055716,0.6501501501501501,1.3036659123458616,433
+Crash_Nature = Fall from vehicle + Crash_Road_Horiz_Align = Straight,0.016510566762728145,0.6501182033096927,1.3036018532867324,1100
+Crash_Road_Horiz_Align = Curved - view open + Crash_Speed_Limit = 80 - 90 km/h,0.01903218059558117,0.6495901639344263,1.3025430410512013,1268
+Crash_Road_Horiz_Align = Curved - view open + Loc_ABS_Remoteness = Inner Regional,0.030724663784822286,0.6484003801076972,1.300157314280841,2047
+Crash_Lighting_Condition = Darkness - Not lighted + Crash_Speed_Limit = 60 km/h,0.011152137367915467,0.6477768090671316,1.2989069441789134,743
+Crash_Lighting_Condition = Darkness - Lighted + Loc_ABS_Remoteness = Outer Regional,0.01074687800192123,0.6473779385171791,1.2981071382582476,716
+Crash_Nature = Hit pedestrian + Loc_ABS_Remoteness = Inner Regional,0.005493515850144092,0.6409807355516638,1.2852796161257465,366
+Crash_Lighting_Condition = Darkness - Not lighted + Crash_Speed_Limit = 0 - 50 km/h,0.006183957732949087,0.639751552795031,1.2828148875403644,412
+Crash_Nature = Hit pedestrian + Crash_Traffic_Control = No traffic control,0.02089337175792507,0.6391184573002755,1.2815454192251114,1392
+Crash_Lighting_Condition = Dawn/Dusk + Loc_ABS_Remoteness = Outer Regional,0.0061689481268011525,0.6381987577639752,1.279701259172548,411
+Loc_ABS_Remoteness = Outer Regional,0.08729586935638808,0.6369510458876355,1.2771993764286351,5816
+Crash_Nature = Hit object + Crash_Traffic_Control = Give way sign,0.005553554274735831,0.6368330464716007,1.2769627667526613,370
+Crash_Nature = Overturned + Loc_ABS_Remoteness = Inner Regional,0.008015129682997118,0.6357142857142857,1.2747194537840416,534
+Crash_Road_Horiz_Align = Curved - view obscured,0.027407540826128722,0.6351304347826087,1.2735487295177428,1826
+Crash_Nature = Hit object + Crash_Speed_Limit = 0 - 50 km/h,0.02104346781940442,0.6341022161917684,1.2714869695888877,1402
+Crash_Lighting_Condition = Daylight + Crash_Road_Horiz_Align = Curved - view obscured,0.01813160422670509,0.6321297749869178,1.2675318765041959,1208
+Crash_Lighting_Condition = Darkness - Not lighted + Loc_ABS_Remoteness = Major Cities,0.013043347742555235,0.632,1.267271654728225,869
+Crash_Traffic_Control = No traffic control + Loc_ABS_Remoteness = Inner Regional,0.08956231988472622,0.6306944297642956,1.2646537557520143,5967
+Crash_Nature = Hit pedestrian + Crash_Roadway_Feature = No Roadway Feature,0.017816402497598464,0.629374337221633,1.2620067369847132,1187
+Crash_Roadway_Feature = No Roadway Feature + Loc_ABS_Remoteness = Inner Regional,0.07041006243996158,0.6292421193829645,1.261741616859406,4691
+Crash_Nature = Hit pedestrian,0.029433837656099904,0.6287271561397884,1.2607090245788617,1961
+Crash_Nature = Hit pedestrian + Crash_Road_Horiz_Align = Straight,0.025141090297790585,0.622445187662579,1.248112567953761,1675
+Crash_Nature = Fall from vehicle + Crash_Speed_Limit = 0 - 50 km/h,0.0075348222862632085,0.6220570012391574,1.2473341855943425,502
+Crash_Lighting_Condition = Darkness - Lighted + Crash_Speed_Limit = 80 - 90 km/h,0.006664265129682997,0.620979020979021,1.2451726447272105,444
+Crash_Roadway_Feature = Bridge/Causeway + Crash_Traffic_Control = No traffic control,0.008720581171950048,0.6194029850746269,1.242012414302412,581
+Crash_Roadway_Feature = Bridge/Causeway,0.009125840537944284,0.6191446028513238,1.241494312296593,608
+Crash_Nature = Fall from vehicle + Crash_Roadway_Feature = Intersection - T-Junction,0.005043227665706052,0.6176470588235294,1.2384914719514484,336
+Crash_Speed_Limit = 100 - 110 km/h,0.09696205571565802,0.6171188383645395,1.23743229661106,6460
+Crash_Roadway_Feature = No Roadway Feature + Crash_Speed_Limit = 80 - 90 km/h,0.03833453410182517,0.6160154365653642,1.2352197810669603,2554
+Crash_Lighting_Condition = Dawn/Dusk + Loc_ABS_Remoteness = Inner Regional,0.00766990874159462,0.614921780986763,1.2330268084169655,511
+Crash_Speed_Limit = 80 - 90 km/h + Crash_Traffic_Control = No traffic control,0.047250240153698365,0.61484375,1.2328703425028593,3148
+Crash_Road_Horiz_Align = Curved - view open + Crash_Roadway_Feature = No Roadway Feature,0.07836515369836695,0.6145968216597999,1.2323752075562062,5221
+Crash_Speed_Limit = 100 - 110 km/h + Crash_Traffic_Control = No traffic control,0.09191882804995197,0.6143659711075441,1.2319123114148263,6124
+Crash_Road_Horiz_Align = Straight + Loc_ABS_Remoteness = Outer Regional,0.057216618635926995,0.6133547868061142,1.2298847082456676,3812
+Crash_Lighting_Condition = Daylight + Loc_ABS_Remoteness = Outer Regional,0.05600084053794428,0.6133486766398158,1.2298724562827632,3731
+Crash_Nature = Hit pedestrian + Crash_Roadway_Feature = Intersection - T-Junction,0.0057036503362151774,0.6129032258064516,1.228979248664571,380
+Crash_Lighting_Condition = Darkness - Lighted + Crash_Nature = Hit parked vehicle,0.007039505283381364,0.6122715404699739,1.227712607965796,469
+Crash_Nature = Fall from vehicle + Loc_ABS_Remoteness = Major Cities,0.012968299711815562,0.611032531824611,1.2252281767375817,864
+Crash_Roadway_Feature = No Roadway Feature + Crash_Speed_Limit = 100 - 110 km/h,0.07922070124879924,0.6104557020587555,1.2240715311491763,5278
+Crash_Nature = Angle + Crash_Speed_Limit = 80 - 90 km/h,0.009726224783861672,0.6084507042253521,1.2200511562724932,648
+Crash_Lighting_Condition = Darkness - Lighted + Loc_ABS_Remoteness = Inner Regional,0.012563040345821326,0.604332129963899,1.2117926872544034,837
+Crash_Nature = Hit pedestrian + Loc_ABS_Remoteness = Major Cities,0.018822046109510087,0.6037554164660568,1.2106362748039057,1254
+Crash_Speed_Limit = 80 - 90 km/h,0.05643611911623439,0.603047313552526,1.2092164033625323,3760
+Crash_Lighting_Condition = Daylight + Crash_Nature = Hit pedestrian,0.018807036503362153,0.6026936026936027,1.208507150600692,1253
+Loc_ABS_Remoteness = Inner Regional,0.12012187800192123,0.6026809247684314,1.2084817291209287,8003
+Crash_Roadway_Feature = Intersection - T-Junction + Crash_Speed_Limit = 80 - 90 km/h,0.00914085014409222,0.6023738872403561,1.2078660646331634,609
+Crash_Road_Horiz_Align = Curved - view open + Crash_Traffic_Control = No traffic control,0.09921349663784822,0.6004723837209303,1.2040532141402294,6610
