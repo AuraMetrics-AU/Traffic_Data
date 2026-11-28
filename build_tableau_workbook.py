@@ -26,7 +26,7 @@ It writes three files:
   straight to the .hyper files, to try if the first does not load.
 
 The sheet and dashboard specifications match the V6 table layouts. The V5 version of this
-script, which built `Queensland Traffic V5.twbx`, is in Git history (commit d601b8e).
+script, which built `Queensland Traffic V5.twbx`, is in Git history (commit 8cec4b1).
 """
 import csv
 import os

@@ -42,7 +42,7 @@
 | 19 Nov 2026 | Spatial layers retained; V2 notebook (location recovery first version); spatial matching utility | `Public spatial data/`, `Archive/Traffic_Incidents_V2.ipynb`, `traffic_spatial_lookup.py` | 1–2 |
 | 20 Nov 2026 | V3, V4 and V5 notebooks; Tableau workbooks; Esri map page; V5 release manifest | `Archive/`, `Queensland Traffic V5.twbx`, manifest | 2–5 |
 | **M0** 20 Nov 2026 | V5 analytical release | `Traffic_Incidents_V5.ipynb` | — |
-| 27 Nov 2026 | Git repository created; V5 review (`Review_Improvements_05.md`) | Commits `eff42ac`, `37e827d`, `d601b8e` | 6 → 1 |
+| 27 Nov 2026 | Git repository created; V5 review (`Review_Improvements_05.md`) | Commits `eff42ac`, `37e827d`, `8cec4b1` | 6 → 1 |
 | 27 Nov 2026 | V6 build: severity-drift fix, crash-level fields, road-site screening, new models, location-recovery module | `Traffic_Incidents_V6.ipynb`, `traffic_location_recovery.py`, `traffic_road_sites.py` | 2–4 |
 | 27 Nov 2026 | Reliability experiments R1–R7; documentation set; draw.io diagrams | Phase 4 cells; the `.md` files; `Write_Ups/figures/` | 4–6 |
 | **M1** 27 Nov 2026 | **V6 analysis and documentation complete** | This document set | — |
